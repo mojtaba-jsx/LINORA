@@ -19,7 +19,7 @@ let routes = [
   { path: "/products/productinfo", element: <ProductInfo /> },
   { path: "/aboutus", element: <AboutUs /> },
   { path: "/contactus", element: <ContactUs /> },
-  { path: "/basket", element: <Basket /> },
+  { path: "/products/basket", element: <Basket /> },
   { path: "/products/basket/checkout", element: <CheckOut /> },
   { path: "/notfound", element: <NotFound /> },
 ];
