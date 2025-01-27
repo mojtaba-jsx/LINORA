@@ -104,6 +104,96 @@ function Navbar() {
                 مردانه
                 <GoChevronDown className="navbar-menu__icon" />
               </Link>
+              <div className="navbar-menu__men">
+                <div className="navbar-menu__men-items">
+                  <h1 className="navbar-menu__men-items-title">مردانه</h1>
+                  <div className="navbar-menu__men-items__box">
+                    <ul className="navbar-menu__men-items-list">
+                      <li className="navbar-menu__men-items-list__item">
+                        <Link
+                          className="navbar-menu__men-items-list__item-link"
+                          to={"/"}
+                        >
+                          کت و شلوار
+                        </Link>
+                      </li>
+                      <li className="navbar-menu__men-items-list__item">
+                        <Link
+                          className="navbar-menu__men-items-list__item-link"
+                          to={"/"}
+                        >
+                          پیراهن
+                        </Link>
+                      </li>
+                      <li className="navbar-menu__men-items-list__item">
+                        <Link
+                          className="navbar-menu__men-items-list__item-link"
+                          to={"/"}
+                        >
+                          تی شرت
+                        </Link>
+                      </li>
+                    </ul>
+
+                    <ul className="navbar-menu__men-items-list">
+                      <li className="navbar-menu__men-items-list__item">
+                        <Link
+                          className="navbar-menu__men-items-list__item-link"
+                          to={"/"}
+                        >
+                          شلوار پارچه ای
+                        </Link>
+                      </li>
+                      <li className="navbar-menu__men-items-list__item">
+                        <Link
+                          className="navbar-menu__men-items-list__item-link"
+                          to={"/"}
+                        >
+                          هودی
+                        </Link>
+                      </li>
+                      <li className="navbar-menu__men-items-list__item">
+                        <Link
+                          className="navbar-menu__men-items-list__item-link"
+                          to={"/"}
+                        >
+                          ژاکت
+                        </Link>
+                      </li>
+                    </ul>
+
+                    <ul className="navbar-menu__men-items-list">
+                      <li className="navbar-menu__men-items-list__item">
+                        <Link
+                          className="navbar-menu__men-items-list__item-link"
+                          to={"/"}
+                        >
+                          کروات
+                        </Link>
+                      </li>
+                      <li className="navbar-menu__men-items-list__item">
+                        <Link
+                          className="navbar-menu__men-items-list__item-link"
+                          to={"/"}
+                        >
+                          بلوز
+                        </Link>
+                      </li>
+                      <li className="navbar-menu__men-items-list__item">
+                        <Link
+                          className="navbar-menu__men-items-list__item-link"
+                          to={"/"}
+                        >
+                          شلوار لی
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="navbar-menu__men-image">
+                  <img src="./src/assets/images/men-category.png" alt="" className="" />
+                </div>
+              </div>
             </li>
             <li className="navbar-menu__item">
               <Link className="navbar-menu__link" to={"/"}>
