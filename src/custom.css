@@ -144,8 +144,13 @@ body {
     font-family: 'parastoo', Courier, monospace;
     color: var(--black);
     direction: rtl;
+    position: relative;
 }
-h1,h2,h3,h4,h5,h6,p,span,div,
+.container{
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
 
 
 /* ! Color Variables */

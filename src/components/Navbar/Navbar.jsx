@@ -7,78 +7,140 @@ import { GoChevronDown } from "react-icons/go";
 import { FaRegUser } from "react-icons/fa";
 function Navbar() {
   return (
-    <div className="navabr">
-      {/* !////////////////// */}
-      <div className="navabr-right">
-        <img
-          src="./src/assets/images/linora-logo.png"
-          alt=""
-          className="navabr-right__logo"
-        />
-      </div>
-      {/* !////////////////// */}
+    <div className="container">
+      <div className="navbar">
+        {/* !////////////////// */}
+        <div className="navbar-right">
+          <img
+            src="./src/assets/images/LogoImage/NEWLOGO.png"
+            alt=""
+            className="navbar-right__logo"
+          />
+        </div>
+        {/* !////////////////// */}
 
-      <div className="navabr-middle">
-        <ul className="navabr-menu">
-          <li className="navabr-menu__item">
-            <Link className="navabr-menu__link" to={"/"}>
-              صفحه اصلی
-            </Link>
-          </li>
-          <li className="navabr-menu__item">
-            <Link className="navabr-menu__link" to={"/products"}>
-              فروشگاه
-            </Link>
-          </li>
-          <li className="navabr-menu__item">
-            <Link className="navabr-menu__link" to={"/"}>
-              دسته بندی
-              <GoChevronDown className="navabr-menu__icon" />
-            </Link>
-          </li>
-          <li className="navabr-menu__item">
-            <Link className="navabr-menu__link" to={"/"}>
-              مردانه
-              <GoChevronDown className="navabr-menu__icon" />
+        <div className="navbar-middle">
+          <ul className="navbar-menu">
+            <li className="navbar-menu__item">
+              <Link className="navbar-menu__link" to={"/"}>
+                صفحه اصلی
+              </Link>
+            </li>
+            <li className="navbar-menu__item">
+              <Link className="navbar-menu__link" to={"/products"}>
+                فروشگاه
+              </Link>
+            </li>
+            <li className="navbar-menu__item category-btn">
+              <Link className="navbar-menu__link" to={"/"}>
+                دسته بندی
+                <GoChevronDown className="navbar-menu__icon navbar-menu__icon-category" />
+              </Link>
+              <div className="navbar-menu__category">
+                <div className="navbar-menu__category-item">
+                  <Link className="navbar-menu__category-item__link" to={"/"}>
+                    <img
+                      src="./src/assets/images/category/man.png"
+                      alt=""
+                      className="navbar-menu__category-image"
+                    />
+                    <span className="navbar-menu__category-title">مردانه</span>
+                  </Link>
+                </div>
+                <div className="navbar-menu__category-item">
+                  <Link className="navbar-menu__category-item__link" to={"/"}>
+                    <img
+                      src="./src/assets/images/category/woman.png"
+                      alt=""
+                      className="navbar-menu__category-image"
+                    />
+                    <span className="navbar-menu__category-title">زنانه</span>
+                  </Link>
+                </div>
+                <div className="navbar-menu__category-item">
+                  <Link className="navbar-menu__category-item__link" to={"/"}>
+                    <img
+                      src="./src/assets/images/category/shoes.png"
+                      alt=""
+                      className="navbar-menu__category-image"
+                    />
+                    <span className="navbar-menu__category-title">کفش</span>
+                  </Link>
+                </div>
+                <div className="navbar-menu__category-item">
+                  <Link className="navbar-menu__category-item__link" to={"/"}>
+                    <img
+                      src="./src/assets/images/category/jewelery.png"
+                      alt=""
+                      className="navbar-menu__category-image"
+                    />
+                    <span className="navbar-menu__category-title">جواهرات</span>
+                  </Link>
+                </div>
+                <div className="navbar-menu__category-item">
+                  <Link className="navbar-menu__category-item__link" to={"/"}>
+                    <img
+                      src="./src/assets/images/category/sunglasses.png"
+                      alt=""
+                      className="navbar-menu__category-image"
+                    />
+                    <span className="navbar-menu__category-title">عینک</span>
+                  </Link>
+                </div>
+                <div className="navbar-menu__category-item">
+                  <Link className="navbar-menu__category-item__link" to={"/"}>
+                    <img
+                      src="./src/assets/images/category/bags.png"
+                      alt=""
+                      className="navbar-menu__category-image"
+                    />
+                    <span className="navbar-menu__category-title">کیف</span>
+                  </Link>
+                </div>
+              </div>
+            </li>
+            <li className="navbar-menu__item">
+              <Link className="navbar-menu__link" to={"/"}>
+                مردانه
+                <GoChevronDown className="navbar-menu__icon" />
+              </Link>
+            </li>
+            <li className="navbar-menu__item">
+              <Link className="navbar-menu__link" to={"/"}>
+                زنانه
+                <GoChevronDown className="navbar-menu__icon" />
+              </Link>
+            </li>
+            <li className="navbar-menu__item">
+              <Link className="navbar-menu__link" to={"/blog"}>
+                بلاگ
+              </Link>
+            </li>
+            <li className="navbar-menu__item">
+              <Link className="navbar-menu__link" to={"/aboutus"}>
+                درباره ما
+              </Link>
+            </li>
+            <li className="navbar-menu__item">
+              <Link className="navbar-menu__link" to={"/contactus"}>
+                ارتباط با ما
+              </Link>
+            </li>
+          </ul>
+        </div>
+        {/* !////////////////// */}
+        <div className="navbar-left">
+          <span className="navbar-left__search">
+            <CiSearch className="navbar-left__icon" />
+          </span>
 
-            </Link>
-          </li>
-          <li className="navabr-menu__item">
-            <Link className="navabr-menu__link" to={"/"}>
-              زنانه
-              <GoChevronDown className="navabr-menu__icon" />
-
-            </Link>
-          </li>
-          <li className="navabr-menu__item">
-            <Link className="navabr-menu__link" to={"/blog"}>
-              بلاگ
-            </Link>
-          </li>
-          <li className="navabr-menu__item">
-            <Link className="navabr-menu__link" to={"/aboutus"}>
-              درباره ما
-            </Link>
-          </li>
-          <li className="navabr-menu__item">
-            <Link className="navabr-menu__link" to={"/contactus"}>
-              ارتباط با ما
-            </Link>
-          </li>
-        </ul>
-      </div>
-      {/* !////////////////// */}
-      <div className="navabr-left">
-        <span className="navabr-left__search">
-          <CiSearch className="navabr-left__search-icon" />
-        </span>
-
-        <span className="navabr-left__login">
-        <FaRegUser />
-        </span>
-        <span className="navabr-left__basket">
-          <CiShoppingBasket className="navabr-left__basket-icon" />
-        </span>
+          <span className="navbar-left__login">
+            <FaRegUser className="navbar-left__icon" />
+          </span>
+          <span className="navbar-left__basket">
+            <CiShoppingBasket className="navbar-left__icon" />
+          </span>
+        </div>
       </div>
     </div>
   );

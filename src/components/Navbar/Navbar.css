@@ -1,0 +1,108 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* ! Navbar Right */
+.navbar-right {
+  margin-right: 1rem;
+}
+.navbar-right__logo {
+  width: 8rem;
+  height: 4rem;
+}
+
+/* ! Navbar Middle */
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  column-gap: 1.4rem;
+}
+
+.navbar-menu__link {
+  display: flex;
+  align-items: center;
+  column-gap: 0.2rem;
+  color: var(--black);
+  font-family: "parastoo-bold", Courier, monospace;
+
+  transition: all 100ms ease-in;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.navbar-menu__link:hover {
+  transform: scale(1.2);
+}
+/* ! Navbar Left */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  margin-left: 1rem;
+}
+.navbar-left__icon {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+/* ! Navbar Category SubMenu */
+
+.navbar-menu__category {
+  position: absolute;
+  height: 20rem;
+
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  inset: 4rem 0 0 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 120ms ease-in;
+}
+
+.category-btn:hover .navbar-menu__category {
+    opacity: 1;
+    visibility: visible;
+}
+.navbar-menu__icon-category{
+  transition: all 140ms ease-in;
+
+}
+
+.category-btn:hover .navbar-menu__icon-category {
+    transform: rotate(180deg);
+}
+
+
+.navbar-menu__category-item {
+  transition: all 120ms ease-in;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.navbar-menu__category-item:hover {
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  transform: scale(1.04);
+}
+
+.navbar-menu__category-item__link {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 2rem;
+  color: var(--black);
+  font-family: "parastoo-bold", Courier, monospace;
+  font-size: 1.2rem;
+}
+
+.navbar-menu__category-image {
+  width: 10rem;
+  height: 10rem;
+}
