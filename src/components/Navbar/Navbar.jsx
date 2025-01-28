@@ -4,18 +4,20 @@ import { Link } from "react-router-dom";
 import { CiSearch } from "react-icons/ci";
 import { CiShoppingBasket } from "react-icons/ci";
 import { GoChevronDown } from "react-icons/go";
-import { FaRegUser } from "react-icons/fa";
+import { CiUser } from "react-icons/ci";
 function Navbar() {
   return (
     <div className="container">
       <div className="navbar">
         {/* !////////////////// */}
         <div className="navbar-right">
-          <img
-            src="./src/assets/images/LogoImage/NEWLOGO.png"
-            alt=""
-            className="navbar-right__logo"
-          />
+          <Link to={"/"}>
+            <img
+              src="./src/assets/images/LogoImage/NEWLOGO.png"
+              alt=""
+              className="navbar-right__logo"
+            />
+          </Link>
         </div>
         {/* !////////////////// */}
 
@@ -98,7 +100,7 @@ function Navbar() {
           </span>
 
           <span className="navbar-left__login">
-            <FaRegUser className="navbar-left__icon" />
+            <CiUser className="navbar-left__icon" />
           </span>
           <span className="navbar-left__basket">
             <CiShoppingBasket className="navbar-left__icon" />
