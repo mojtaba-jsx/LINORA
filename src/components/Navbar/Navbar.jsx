@@ -37,170 +37,43 @@ function Navbar() {
                 <GoChevronDown className="navbar-menu__icon navbar-menu__icon-category" />
               </Link>
               <div className="navbar-menu__category">
-                <div className="navbar-menu__category-item">
-                  <Link className="navbar-menu__category-item__link" to={"/"}>
-                    <img
-                      src="./src/assets/images/category/man.png"
-                      alt=""
-                      className="navbar-menu__category-image"
-                    />
-                    <span className="navbar-menu__category-title">مردانه</span>
-                  </Link>
+                <div className="navbar-menu__category__top">
+                  <img
+                    src="./src/assets/images/category/men.png"
+                    alt=""
+                    className="navbar-menu__category__top-men"
+                  />
+                  <img
+                    src="./src/assets/images/category/sport.png"
+                    alt=""
+                    className="navbar-menu__category__top-sport"
+                  />
+                  <img
+                    src="./src/assets/images/category/woman1.png"
+                    alt=""
+                    className="navbar-menu__category__top-woman"
+                  />
                 </div>
-                <div className="navbar-menu__category-item">
-                  <Link className="navbar-menu__category-item__link" to={"/"}>
-                    <img
-                      src="./src/assets/images/category/woman.png"
-                      alt=""
-                      className="navbar-menu__category-image"
-                    />
-                    <span className="navbar-menu__category-title">زنانه</span>
-                  </Link>
-                </div>
-                <div className="navbar-menu__category-item">
-                  <Link className="navbar-menu__category-item__link" to={"/"}>
-                    <img
-                      src="./src/assets/images/category/shoes.png"
-                      alt=""
-                      className="navbar-menu__category-image"
-                    />
-                    <span className="navbar-menu__category-title">کفش</span>
-                  </Link>
-                </div>
-                <div className="navbar-menu__category-item">
-                  <Link className="navbar-menu__category-item__link" to={"/"}>
-                    <img
-                      src="./src/assets/images/category/jewelery.png"
-                      alt=""
-                      className="navbar-menu__category-image"
-                    />
-                    <span className="navbar-menu__category-title">جواهرات</span>
-                  </Link>
-                </div>
-                <div className="navbar-menu__category-item">
-                  <Link className="navbar-menu__category-item__link" to={"/"}>
-                    <img
-                      src="./src/assets/images/category/sunglasses.png"
-                      alt=""
-                      className="navbar-menu__category-image"
-                    />
-                    <span className="navbar-menu__category-title">عینک</span>
-                  </Link>
-                </div>
-                <div className="navbar-menu__category-item">
-                  <Link className="navbar-menu__category-item__link" to={"/"}>
-                    <img
-                      src="./src/assets/images/category/bags.png"
-                      alt=""
-                      className="navbar-menu__category-image"
-                    />
-                    <span className="navbar-menu__category-title">کیف</span>
-                  </Link>
+                <div className="navbar-menu__category__bottom">
+                  <img
+                    src="./src/assets/images/category/backpack.png"
+                    alt=""
+                    className="navbar-menu__category__bottom-backpack"
+                  />
+                  <img
+                    src="./src/assets/images/category/coupons.png"
+                    alt=""
+                    className="navbar-menu__category__bottom-coupon"
+                  />
+                  <img
+                    src="./src/assets/images/category/sunglasses.png"
+                    alt=""
+                    className="navbar-menu__category__bottom-sunglsses"
+                  />
                 </div>
               </div>
             </li>
-            <li className="navbar-menu__item">
-              <Link className="navbar-menu__link" to={"/"}>
-                مردانه
-                <GoChevronDown className="navbar-menu__icon" />
-              </Link>
-              <div className="navbar-menu__men">
-                <div className="navbar-menu__men-items">
-                  <h1 className="navbar-menu__men-items-title">مردانه</h1>
-                  <div className="navbar-menu__men-items__box">
-                    <ul className="navbar-menu__men-items-list">
-                      <li className="navbar-menu__men-items-list__item">
-                        <Link
-                          className="navbar-menu__men-items-list__item-link"
-                          to={"/"}
-                        >
-                          کت و شلوار
-                        </Link>
-                      </li>
-                      <li className="navbar-menu__men-items-list__item">
-                        <Link
-                          className="navbar-menu__men-items-list__item-link"
-                          to={"/"}
-                        >
-                          پیراهن
-                        </Link>
-                      </li>
-                      <li className="navbar-menu__men-items-list__item">
-                        <Link
-                          className="navbar-menu__men-items-list__item-link"
-                          to={"/"}
-                        >
-                          تی شرت
-                        </Link>
-                      </li>
-                    </ul>
 
-                    <ul className="navbar-menu__men-items-list">
-                      <li className="navbar-menu__men-items-list__item">
-                        <Link
-                          className="navbar-menu__men-items-list__item-link"
-                          to={"/"}
-                        >
-                          شلوار پارچه ای
-                        </Link>
-                      </li>
-                      <li className="navbar-menu__men-items-list__item">
-                        <Link
-                          className="navbar-menu__men-items-list__item-link"
-                          to={"/"}
-                        >
-                          هودی
-                        </Link>
-                      </li>
-                      <li className="navbar-menu__men-items-list__item">
-                        <Link
-                          className="navbar-menu__men-items-list__item-link"
-                          to={"/"}
-                        >
-                          ژاکت
-                        </Link>
-                      </li>
-                    </ul>
-
-                    <ul className="navbar-menu__men-items-list">
-                      <li className="navbar-menu__men-items-list__item">
-                        <Link
-                          className="navbar-menu__men-items-list__item-link"
-                          to={"/"}
-                        >
-                          کروات
-                        </Link>
-                      </li>
-                      <li className="navbar-menu__men-items-list__item">
-                        <Link
-                          className="navbar-menu__men-items-list__item-link"
-                          to={"/"}
-                        >
-                          بلوز
-                        </Link>
-                      </li>
-                      <li className="navbar-menu__men-items-list__item">
-                        <Link
-                          className="navbar-menu__men-items-list__item-link"
-                          to={"/"}
-                        >
-                          شلوار لی
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="navbar-menu__men-image">
-                  <img src="./src/assets/images/men-category.png" alt="" className="" />
-                </div>
-              </div>
-            </li>
-            <li className="navbar-menu__item">
-              <Link className="navbar-menu__link" to={"/"}>
-                زنانه
-                <GoChevronDown className="navbar-menu__icon" />
-              </Link>
-            </li>
             <li className="navbar-menu__item">
               <Link className="navbar-menu__link" to={"/blog"}>
                 بلاگ
