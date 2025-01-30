@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./MobileMenu.css";
 import { Link } from "react-router-dom";
 import { RiMenuFold3Line } from "react-icons/ri";
@@ -17,12 +17,27 @@ import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 function MobileMenu() {
+  const [isSidemenuActive, setIsSidemenuActive] = useState(false);
+
+  const closeSideMenuHandler = () => {
+    setIsSidemenuActive(false);
+  };
+  const showSideMenuHandler = () => {
+    setIsSidemenuActive(true);
+  };
   return (
     <>
       <div className="mobile-menu">
+        <div
+          className={` mobile-menu-overlay ${isSidemenuActive ? "active" : ""}`}
+        ></div>
         <ul className="mobile-menu__list">
           <li className="mobile-menu__list-item">
-            <Link to={"/"} className="mobile-menu__list-link">
+            <Link
+              to={"/"}
+              className="mobile-menu__list-link"
+              onClick={showSideMenuHandler}
+            >
               <RiMenuFold3Line className="mobile-menu__list-icon" />
             </Link>
           </li>
@@ -47,16 +62,24 @@ function MobileMenu() {
             </Link>
           </li>
         </ul>
-        <div className="mobile-menu__sidemenu">
+        {/* * Side Menu */}
+        <div
+          className={` mobile-menu__sidemenu ${
+            isSidemenuActive ? "active" : ""
+          }`}
+        >
           <ul className="mobile-menu__sidemenu-list">
             <li className="mobile-menu__sidemenu-list__item">
               <Link to={"/"} className="mobile-menu__sidemenu-list__link">
                 <img
                   src="./src/assets/images/LogoImage/LINORA.PNG"
                   alt=""
-                  className=""
+                  className="mobile-menu__sidemenu-list__logo"
                 />
-                <IoCloseOutline className="mobile-menu__sidemenu-list__icon" />
+                <IoCloseOutline
+                  className="mobile-menu__sidemenu-list__icon"
+                  onClick={closeSideMenuHandler}
+                />
               </Link>
             </li>
             <li className="mobile-menu__sidemenu-list__item">
@@ -92,16 +115,16 @@ function MobileMenu() {
           </ul>
           <div className="mobile-menu__sidemenu-socials">
             <Link to={"/"} className="mobile-menu__sidemenu-socials__link">
-              <FaTelegram className="mobile-menu__sidemenu-socials__link" />
+              <FaTelegram className="mobile-menu__sidemenu-socials__icon telegram" />
             </Link>
             <Link to={"/"} className="mobile-menu__sidemenu-socials__link">
-              <FaInstagram className="mobile-menu__sidemenu-socials__link" />
+              <FaInstagram className="mobile-menu__sidemenu-socials__icon instagram" />
             </Link>
             <Link to={"/"} className="mobile-menu__sidemenu-socials__link">
-              <FaWhatsapp className="mobile-menu__sidemenu-socials__link" />
+              <FaWhatsapp className="mobile-menu__sidemenu-socials__icon whatsapp" />
             </Link>
             <Link to={"/"} className="mobile-menu__sidemenu-socials__link">
-              <FaGithub className="mobile-menu__sidemenu-socials__link" />
+              <FaGithub className="mobile-menu__sidemenu-socials__icon github" />
             </Link>
           </div>
         </div>
