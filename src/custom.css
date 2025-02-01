@@ -198,4 +198,8 @@ body {
   .navbar{
     box-shadow: none;
   }
+  /* * MobileMenu Component */
+  .mobile-menu{
+    display: block;
+  }
 }

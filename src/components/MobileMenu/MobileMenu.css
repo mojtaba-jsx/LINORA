@@ -1,3 +1,7 @@
+.mobile-menu {
+  display: none;
+}
+
 .mobile-menu__list {
   display: flex;
   align-items: center;
@@ -79,6 +83,11 @@
 .mobile-menu__sidemenu-list__icon {
   width: 2rem;
   height: 2rem;
+  color: var(--green);
+}
+
+.close-menu {
+  color: var(--red);
 }
 
 .mobile-menu__sidemenu-socials {
@@ -109,4 +118,68 @@
 }
 
 .github {
+}
+
+/* ! Side Menu Category Box */
+.sidemenu-category {
+}
+.sidemenu-category.active {
+}
+.mobile-menu__sidemenu-category {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  transition: all 120ms ease-in;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+.mobile-menu__sidemenu-category.active {
+  height: 19rem;
+  visibility: visible;
+  opacity: 1;
+}
+
+.sidemenu-arrowdown {
+  transition: all 120ms ease-in;
+}
+
+.mobile-menu__sidemenu-categor__item {
+  border-radius: 0.5rem;
+}
+
+.mobile-menu__sidemenu-category__link {
+  color: var(--black);
+  position: relative;
+  padding-right: 1rem;
+  display: block;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0.5rem;
+  transition: all 120ms ease-in;
+}
+.mobile-menu__sidemenu-category__link::before {
+  content: "*";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--green);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 10rem;
+  top: 1.4rem;
+  right: -2rem;
+  /* background-color: var(--green); */
+  position: absolute;
+  transition: all 120ms ease-in;
+}
+.mobile-menu__sidemenu-category__link:hover::before {
+  right: -1rem;
+}
+.mobile-menu__sidemenu-category__link:hover {
+  background-color: var(--green);
+  color: var(--white);
 }

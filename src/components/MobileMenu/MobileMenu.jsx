@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./MobileMenu.css";
 import { Link } from "react-router-dom";
 import { RiMenuFold3Line } from "react-icons/ri";
@@ -18,6 +18,14 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 function MobileMenu() {
   const [isSidemenuActive, setIsSidemenuActive] = useState(false);
+  const [isSidemenuCategoryActive, setIsSidemenuCategoryActive] =
+    useState(false);
+
+  const aroowDownRef = useRef(null);
+
+  const showSideMenuCategoryHandler = () => {
+    setIsSidemenuCategoryActive((prev) => !prev);
+  };
 
   const closeSideMenuHandler = () => {
     setIsSidemenuActive(false);
@@ -25,11 +33,14 @@ function MobileMenu() {
   const showSideMenuHandler = () => {
     setIsSidemenuActive(true);
   };
+
   return (
     <>
       <div className="mobile-menu">
+        {/* ! Overlay */}
         <div
           className={` mobile-menu-overlay ${isSidemenuActive ? "active" : ""}`}
+          onClick={closeSideMenuHandler}
         ></div>
         <ul className="mobile-menu__list">
           <li className="mobile-menu__list-item">
@@ -62,7 +73,7 @@ function MobileMenu() {
             </Link>
           </li>
         </ul>
-        {/* * Side Menu */}
+        {/* * //////// Side Menu //////// */}
         <div
           className={` mobile-menu__sidemenu ${
             isSidemenuActive ? "active" : ""
@@ -77,7 +88,7 @@ function MobileMenu() {
                   className="mobile-menu__sidemenu-list__logo"
                 />
                 <IoCloseOutline
-                  className="mobile-menu__sidemenu-list__icon"
+                  className="mobile-menu__sidemenu-list__icon close-menu"
                   onClick={closeSideMenuHandler}
                 />
               </Link>
@@ -88,11 +99,55 @@ function MobileMenu() {
                 <IoStorefrontOutline className="mobile-menu__sidemenu-list__icon" />
               </Link>
             </li>
-            <li className="mobile-menu__sidemenu-list__item">
+            <li
+              className="mobile-menu__sidemenu-list__item sidemenu-category"
+              onClick={showSideMenuCategoryHandler}
+            >
               <Link to={"/"} className="mobile-menu__sidemenu-list__link">
                 دسته بندی
-                <MdKeyboardArrowDown className="mobile-menu__sidemenu-list__icon" />
+                <span
+                className="sidemenu-arrowdown"
+                  ref={aroowDownRef}
+                  style={{
+                    transform: `rotate${
+                      isSidemenuCategoryActive ? "(180deg)" : "(0)"
+                    }`,
+                  }}
+                >
+                  <MdKeyboardArrowDown className="mobile-menu__sidemenu-list__icon " />
+                </span>
               </Link>
+              <ul
+                className={`mobile-menu__sidemenu-category ${
+                  isSidemenuCategoryActive ? "active" : ""
+                } `}
+              >
+                <li className="mobile-menu__sidemenu-categor__item">
+                  <Link className="mobile-menu__sidemenu-category__link">
+                    مردانه
+                  </Link>
+                </li>
+                <li className="mobile-menu__sidemenu-categor__item">
+                  <Link className="mobile-menu__sidemenu-category__link">
+                    زنانه
+                  </Link>
+                </li>
+                <li className="mobile-menu__sidemenu-categor__item">
+                  <Link className="mobile-menu__sidemenu-category__link">
+                    اسپورت
+                  </Link>
+                </li>
+                <li className="mobile-menu__sidemenu-categor__item">
+                  <Link className="mobile-menu__sidemenu-category__link">
+                    عینک
+                  </Link>
+                </li>
+                <li className="mobile-menu__sidemenu-categor__item">
+                  <Link className="mobile-menu__sidemenu-category__link">
+                    کیف
+                  </Link>
+                </li>
+              </ul>
             </li>
             <li className="mobile-menu__sidemenu-list__item">
               <Link to={"/"} className="mobile-menu__sidemenu-list__link">
