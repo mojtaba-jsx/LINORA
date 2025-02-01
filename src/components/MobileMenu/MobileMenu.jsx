@@ -83,7 +83,7 @@ function MobileMenu() {
             <li className="mobile-menu__sidemenu-list__item">
               <Link to={"/"} className="mobile-menu__sidemenu-list__link">
                 <img
-                  src="./src/assets/images/LogoImage/LINORA.PNG"
+                  src="./src/assets/images/LogoImage/LINORA2.PNG"
                   alt=""
                   className="mobile-menu__sidemenu-list__logo"
                 />

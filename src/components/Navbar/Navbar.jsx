@@ -14,7 +14,7 @@ function Navbar() {
           <div className="navbar-right">
             <Link to={"/"}>
               <img
-                src="./src/assets/images/LogoImage/LINORA.png"
+                src="./src/assets/images/LogoImage/LINORA2.png"
                 alt=""
                 className="navbar-right__logo"
               />
