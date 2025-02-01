@@ -138,6 +138,10 @@ table {
   font-family: "parastoo-bold";
   src: url("./assets/Fonts/Parastoo-Bold-FD.woff");
 }
+@font-face {
+  font-family: "sogand";
+  src: url("./assets/Fonts/SOGAND.ttf");
+}
 
 /* ! Default CSS */
 
@@ -156,9 +160,10 @@ body {
   --white: #ffffff;
   --black: #212121;
   --green: #16c47f;
-  --skyBlue:#98D8EF;
-  --red:#F93827;
-  --jaggedIce:#C2EFD4;
+  --skyBlue: #98d8ef;
+  --red: #f93827;
+  --jaggedIce: #c2efd4;
+  --everglade: #224f34;
 }
 
 /* ! Scrollbar Styles */
@@ -190,15 +195,15 @@ body {
   .navbar-left {
     display: none;
   }
-  .navbar-right{
+  .navbar-right {
     margin: 0 auto;
   }
-  .navbar{
+  .navbar {
     box-shadow: none;
-    background:none;
+    background: none;
   }
   /* * MobileMenu Component */
-  .mobile-menu{
+  .mobile-menu {
     display: block;
   }
 }

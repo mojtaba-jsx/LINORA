@@ -99,6 +99,8 @@
   visibility: hidden;
   opacity: 0;
   transition: all 120ms ease-in;
+  z-index: 1000;
+  background-color: var(--jaggedIce);
 }
 
 .navbar-menu__category::-webkit-scrollbar-thumb {
