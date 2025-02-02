@@ -9,7 +9,7 @@ function Fashion() {
       <div className="container">
         <div className="fashion__wrapper">
           <div className="fashion__right">
-            <h1 className="fashion__right-title"> جست و جو کنید و</h1>
+            <h1 className="fashion__right-title"> جست و جو کنید </h1>
             <h1 className="fashion__right-title">
               استایل خود را کشف کنید
               <GiClothes className="fashion__right-title-icon" />
