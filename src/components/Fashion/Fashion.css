@@ -28,8 +28,6 @@
   gap: 2rem;
 }
 
-
-
 .fashion__right-text {
   line-height: 1.4rem;
   font-family: "parastoo-bold", Courier, monospace;
@@ -57,16 +55,15 @@
   overflow: hidden;
 }
 .fashion__right__btn span {
-z-index: 2;
-
+  z-index: 2;
 }
 
-.fashion__right__btn:hover::before{
+.fashion__right__btn:hover::before {
   transform: scale(22);
 }
 
 .fashion__right__btn::before {
-  content: '';
+  content: "";
   width: 25px;
   height: 25px;
   border-radius: 100%;
@@ -77,13 +74,11 @@ z-index: 2;
   transition: all 400ms ease-in;
 }
 
-
-
 .fashion__right__btn:hover {
   box-shadow: none;
   box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
     rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
-    color: var(--white);
+  color: var(--white);
 }
 .fashion__right__btn-icon {
   width: 2rem;
@@ -106,4 +101,5 @@ z-index: 2;
 }
 
 .fashion__left-image {
+  transform: scale(1.04);
 }
