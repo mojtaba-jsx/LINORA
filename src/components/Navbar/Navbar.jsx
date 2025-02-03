@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { CiSearch } from "react-icons/ci";
 import { CiShoppingBasket } from "react-icons/ci";
 import { GoChevronDown } from "react-icons/go";
 import { CiUser } from "react-icons/ci";
+
+import appContext from "../../Contexts/AppContext";
 function Navbar() {
+  const { setIsShowSearchModal } = useContext(appContext);
   return (
     <div className="navabr__wrapper">
       <div className="container">
@@ -96,7 +99,10 @@ function Navbar() {
           </div>
           {/* !////////////////// */}
           <div className="navbar-left">
-            <span className="navbar-left__search">
+            <span
+              className="navbar-left__search"
+              onClick={() => setIsShowSearchModal(true)}
+            >
               <CiSearch className="navbar-left__icon" />
             </span>
 
