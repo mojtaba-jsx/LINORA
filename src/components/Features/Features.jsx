@@ -7,21 +7,29 @@ import { FaUndoAlt } from "react-icons/fa";
 function Features() {
   return (
     <div className="features">
-      <div className="features__box">
-        <TbTruckDelivery className="features-box-icon" />
-        <p className="features__box-text">تحویل به موقع و در سریع ترین زمان</p>
-      </div>
-      <div className="features__box">
-        <FaHeadset className="features-box-icon" />
-        <p className="features__box-text">پاسخ گویی 24 ساعته پشتیبان ها</p>
-      </div>
-      <div className="features__box">
-        <MdOutlineSecurity className="features-box-icon" />
-        <p className="features__box-text">پرداخت امن و سریع</p>
-      </div>
-      <div className="features__box">
-        <FaUndoAlt className="features-box-icon" />
-        <p className="features__box-text">کالای مرجوعی و ضمانت بازگشت وجه</p>
+      <div className="container">
+        <div className="features__wrapper">
+          <div className="features__box">
+            <TbTruckDelivery className="features-box-icon" />
+            <p className="features__box-text">
+              تحویل  در سریع ترین زمان
+            </p>
+          </div>
+          <div className="features__box">
+            <FaHeadset className="features-box-icon" />
+            <p className="features__box-text">پاسخ گویی 24 ساعته پشتیبان </p>
+          </div>
+          <div className="features__box">
+            <MdOutlineSecurity className="features-box-icon" />
+            <p className="features__box-text">پرداخت امن و سریع</p>
+          </div>
+          <div className="features__box">
+            <FaUndoAlt className="features-box-icon" />
+            <p className="features__box-text">
+               مرجوعی و ضمانت بازگشت وجه
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
