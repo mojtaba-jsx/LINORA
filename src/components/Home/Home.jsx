@@ -5,6 +5,7 @@ import Navbar from "../Navbar/Navbar";
 import MobileMenu from "../MobileMenu/MobileMenu";
 import Features from '../Features/Features'
 import Search from '../Search/Search'
+import Login from '../Login/Login'
 function Home() {
   return (
     <>
@@ -13,6 +14,7 @@ function Home() {
       <Fashion />
       <Features/>
       <Search/>
+      <Login/>
     </>
   );
 }
