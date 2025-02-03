@@ -212,7 +212,7 @@ body {
   }
 
   /* * Fashion Component */
-  .fashion{
+  .fashion {
     margin-top: 0;
   }
   .fashion__wrapper {
@@ -236,8 +236,18 @@ body {
   .fashion__right__btn {
     margin: 2rem auto;
   }
+  /* * Features Component */
+  .features-title::before {
+    bottom: -0.5rem;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 1200px) {
+  /* * Features Component */
+  .features__wrapper {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
 }
 @media screen and (max-width: 992px) {
   /* * Fashion Component */
@@ -262,15 +272,19 @@ body {
   .fashion__right-title {
     font-size: 2.4rem;
   }
-  .fashion__right-text{
+  .fashion__right-text {
     width: 18rem;
     text-align: center;
   }
-  br{
+  br {
     display: none;
   }
-  .fashion__right__btn{
+  .fashion__right__btn {
     font-size: 1.2rem;
+  }
+  /* * Features Component */
+  .features__box {
+    width: 100%;
   }
 }
 @media screen and (max-width: 576px) {
