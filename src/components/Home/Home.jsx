@@ -6,6 +6,7 @@ import MobileMenu from "../MobileMenu/MobileMenu";
 import Features from '../Features/Features'
 import Search from '../Search/Search'
 import Login from '../Login/Login'
+import SignUp from '../SignUp/SignUp'
 function Home() {
   return (
     <>
@@ -15,6 +16,7 @@ function Home() {
       <Features/>
       <Search/>
       <Login/>
+      <SignUp/>
     </>
   );
 }
