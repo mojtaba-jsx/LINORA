@@ -3,7 +3,8 @@
   width: 30rem;
   margin: 4rem auto;
   border-radius: 0.5rem;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   position: absolute;
   inset: -2.8rem 0 0 0;
   /* height: 40rem; */
@@ -13,15 +14,15 @@
   opacity: 0;
   display: none;
   transition: all 120ms ease-in;
+  scroll-behavior: smooth;
 }
 .login.active {
   visibility: visible;
   opacity: 1;
   display: block;
-
 }
 
-.login-overlay{
+.login-overlay {
   position: fixed !important;
   inset: 0;
   width: 100%;
@@ -32,13 +33,11 @@
   opacity: 0;
   visibility: hidden;
   z-index: 80;
-  
 }
 .login-overlay.active {
   opacity: 1;
   visibility: visible;
 }
-
 
 .login-header {
   display: flex;
@@ -46,7 +45,7 @@
   flex-direction: column;
 }
 
-.login-header__close{
+.login-header__close {
   width: 2rem;
   height: 2rem;
   color: var(--red);
@@ -55,7 +54,8 @@
   cursor: pointer;
   background-color: var(--white);
   border-bottom-left-radius: 1rem;
-  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
 .login-header__logo {
@@ -175,7 +175,7 @@
 .login-form__options-reset {
   cursor: pointer;
   text-decoration: underline;
-  font-family: 'parastoo-bold', Courier, monospace;
+  font-family: "parastoo-bold", Courier, monospace;
 }
 
 .login-form__submit {
@@ -192,8 +192,8 @@
   cursor: pointer;
   transition: all 120ms ease-in;
 }
-.login-form__submit:hover{
-    transform: translateY(-2px);
+.login-form__submit:hover {
+  transform: translateY(-2px);
 }
 
 .login-form__seperator {
@@ -250,8 +250,8 @@
   transition: all 120ms ease-in;
 }
 .login-form__social-login__google:hover,
-.login-form__social-login__facebook:hover{
-    transform: translateY(-2px);
+.login-form__social-login__facebook:hover {
+  transform: translateY(-2px);
 }
 
 .login-form__social__login__google-icon {
@@ -264,22 +264,20 @@
 }
 
 .login-form__social-login__google-icon {
-    width: 2rem;
-    height: 2rem;
-    color: var(--amaranth);
+  width: 2rem;
+  height: 2rem;
+  color: var(--amaranth);
 }
 
 .login-form__signup {
-    margin-top: 1rem;
-    display: flex;
-    align-items: center;
-    column-gap: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
 }
 
 .login-form__signup-link {
   font-family: "parastoo-bold", Courier, monospace;
-    text-decoration: underline;
-    cursor: pointer;
-
+  text-decoration: underline;
+  cursor: pointer;
 }
-

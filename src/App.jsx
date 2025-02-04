@@ -8,6 +8,7 @@ function App() {
 
   const [isShowSearchModal, setIsShowSearchModal] = useState(false);
   const [isShowLoginModal, setIsShowLoginModal] = useState(false);
+  const [isShowSignUpModal, setIsShowSignUpModal] = useState(false);
 
   return (
     <appContext.Provider
@@ -16,6 +17,8 @@ function App() {
         setIsShowSearchModal,
         isShowLoginModal,
         setIsShowLoginModal,
+        isShowSignUpModal,
+        setIsShowSignUpModal,
       }}
     >
       <div>{route}</div>;

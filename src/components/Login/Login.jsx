@@ -7,7 +7,8 @@ import { IoCloseOutline } from "react-icons/io5";
 import appContext from "../../Contexts/AppContext";
 function Login() {
   // const overlayRef = useRef("");
-  const { isShowLoginModal, setIsShowLoginModal } = useContext(appContext);
+  const { isShowLoginModal, setIsShowLoginModal, setIsShowSignUpModal } =
+    useContext(appContext);
 
   return (
     <>
@@ -71,7 +72,10 @@ function Login() {
           </div>
           <span className="login-form__signup">
             حساب کاربری ندارید ؟
-            <span className="login-form__signup-link">ثبت نام</span>
+            <span className="login-form__signup-link" onClick={()=>{
+              setIsShowSignUpModal(true)
+              setIsShowLoginModal(false)
+            }}>ثبت نام</span>
           </span>
         </form>
       </div>
