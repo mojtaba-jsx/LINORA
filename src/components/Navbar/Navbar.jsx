@@ -8,7 +8,9 @@ import { CiUser } from "react-icons/ci";
 
 import appContext from "../../Contexts/AppContext";
 function Navbar() {
-  const { setIsShowSearchModal, setIsShowLoginModal } = useContext(appContext);
+  const { setIsShowSearchModal, setIsShowLoginModal, setIsShowBasketModal } =
+    useContext(appContext);
+
   return (
     <div className="navabr__wrapper">
       <div className="container">
@@ -113,7 +115,7 @@ function Navbar() {
               <CiUser className="navbar-left__icon" />
             </span>
             <span className="navbar-left__basket">
-              <CiShoppingBasket className="navbar-left__icon" />
+              <CiShoppingBasket className="navbar-left__icon" onClick={()=>setIsShowBasketModal(true)} />
             </span>
           </div>
         </div>

@@ -7,6 +7,7 @@ import Features from '../Features/Features'
 import Search from '../Search/Search'
 import Login from '../Login/Login'
 import SignUp from '../SignUp/SignUp'
+import Basket from '../Basket/Basket'
 function Home() {
   return (
     <>
@@ -17,6 +18,8 @@ function Home() {
       <Search/>
       <Login/>
       <SignUp/>
+      <Basket/>
+
     </>
   );
 }

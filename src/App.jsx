@@ -9,6 +9,7 @@ function App() {
   const [isShowSearchModal, setIsShowSearchModal] = useState(false);
   const [isShowLoginModal, setIsShowLoginModal] = useState(false);
   const [isShowSignUpModal, setIsShowSignUpModal] = useState(false);
+  const [isShowBasketModal, setIsShowBasketModal] = useState(false);
 
   return (
     <appContext.Provider
@@ -19,6 +20,8 @@ function App() {
         setIsShowLoginModal,
         isShowSignUpModal,
         setIsShowSignUpModal,
+        isShowBasketModal,
+        setIsShowBasketModal,
       }}
     >
       <div>{route}</div>;

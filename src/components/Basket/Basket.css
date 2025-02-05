@@ -1,0 +1,109 @@
+.basket {
+  position: fixed;
+  left: -40rem;
+  top: 0;
+  background-color: var(--white);
+  height: 100vh;
+  width: 24rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 102;
+  /* display: none; */
+  transition: all 120ms ease-in;
+}
+.basket.active {
+  /* display: block; */
+  left: 0;
+}
+
+.basket-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  z-index: 100;
+}
+
+.basket-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.basket__header {
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--black);
+}
+
+.basket__header-title {
+  font-family: "parastoo-bold", Courier, monospace;
+  font-size: 1.4rem;
+}
+
+.basket__header-icon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--red);
+  cursor: pointer;
+}
+
+.basket__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.basket__box-image {
+}
+
+.basket__box-text {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  font-family: "parastoo-bold", Courier, monospace;
+}
+
+.basket__checkout {
+  margin-bottom: 2rem;
+}
+
+.basket__checkout-link {
+  background-color: var(--black);
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 2rem;
+  color: var(--white);
+  position: relative;
+  height: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.basket__checkout-link--disable {
+  background-color: var(--whiteSmoke);
+  cursor: not-allowed;
+  opacity: 0.6;
+  color: var(--black);
+}
+
+.basket__checkout-link-text {
+  font-size: 1.2rem;
+}
+
+.basket__checkout-link-seperator {
+  width: 0.2rem;
+  height: 100%;
+  background-color: var(--white);
+}
