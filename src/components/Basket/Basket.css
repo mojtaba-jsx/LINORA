@@ -10,11 +10,11 @@
   flex-direction: column;
   justify-content: space-between;
   z-index: 102;
-  /* display: none; */
   transition: all 120ms ease-in;
+  box-shadow: #c7ebdd 5px 5px, #8edcba 10px 10px, #55cd98 15px 15px,
+    #1dbd76 20px 20px, #16c47f 25px 25px;
 }
 .basket.active {
-  /* display: block; */
   left: 0;
 }
 

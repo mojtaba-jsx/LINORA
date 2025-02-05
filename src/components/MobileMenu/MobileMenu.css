@@ -1,6 +1,5 @@
 .mobile-menu {
   display: none;
-
 }
 
 .mobile-menu__list {
@@ -39,6 +38,9 @@
   transition: right 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
+  z-index: 100000;
+  box-shadow: #c7ebdd -5px 5px, #8edcba -10px 10px, #55cd98 -15px 15px,
+    #1dbd76 -20px 20px, #16c47f -25px 25px;
 }
 
 .mobile-menu__sidemenu.active {
