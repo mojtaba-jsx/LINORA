@@ -9,7 +9,7 @@
   position: absolute;
   inset: -2.8rem 0 0 0;
   /* height: 40rem; */
-  z-index: 82;
+  z-index: 10000;
   /* overflow-y: scroll; */
   visibility: hidden;
   opacity: 0;
@@ -17,6 +17,7 @@
   transition: all 120ms ease-in;
   scroll-behavior: smooth;
   padding: 1rem;
+
 }
 .login.active {
   visibility: visible;

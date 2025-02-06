@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useContext } from "react";
 import "./MobileMenu.css";
 import { Link } from "react-router-dom";
 import { RiMenuFold3Line } from "react-icons/ri";
@@ -16,10 +16,14 @@ import { FaTelegram } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+
+import appContext from "../../Contexts/AppContext";
 function MobileMenu() {
   const [isSidemenuActive, setIsSidemenuActive] = useState(false);
   const [isSidemenuCategoryActive, setIsSidemenuCategoryActive] =
     useState(false);
+  const { setIsShowSearchModal, setIsShowBasketModal, setIsShowLoginModal } =
+    useContext(appContext);
 
   const aroowDownRef = useRef(null);
 
@@ -52,7 +56,10 @@ function MobileMenu() {
               <RiMenuFold3Line className="mobile-menu__list-icon" />
             </Link>
           </li>
-          <li className="mobile-menu__list-item">
+          <li
+            className="mobile-menu__list-item"
+            onClick={() => setIsShowSearchModal(true)}
+          >
             <Link to={"/"} className="mobile-menu__list-link">
               <CiSearch className="mobile-menu__list-icon" />
             </Link>
@@ -62,12 +69,18 @@ function MobileMenu() {
               <IoHomeOutline className="mobile-menu__list-icon" />
             </Link>
           </li>
-          <li className="mobile-menu__list-item">
+          <li
+            className="mobile-menu__list-item"
+            onClick={() => setIsShowBasketModal(true)}
+          >
             <Link to={"/"} className="mobile-menu__list-link">
               <CiShoppingBasket className="mobile-menu__list-icon" />
             </Link>
           </li>
-          <li className="mobile-menu__list-item">
+          <li
+            className="mobile-menu__list-item"
+            onClick={() => setIsShowLoginModal(true)}
+          >
             <Link to={"/"} className="mobile-menu__list-link">
               <CiUser className="mobile-menu__list-icon" />
             </Link>
@@ -106,7 +119,7 @@ function MobileMenu() {
               <Link to={"/"} className="mobile-menu__sidemenu-list__link">
                 دسته بندی
                 <span
-                className="sidemenu-arrowdown"
+                  className="sidemenu-arrowdown"
                   ref={aroowDownRef}
                   style={{
                     transform: `rotate${

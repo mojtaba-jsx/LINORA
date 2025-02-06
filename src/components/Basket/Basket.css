@@ -13,6 +13,7 @@
   transition: all 120ms ease-in;
   box-shadow: #c7ebdd 5px 5px, #8edcba 10px 10px, #55cd98 15px 15px,
     #1dbd76 20px 20px, #16c47f 25px 25px;
+    z-index: 1000000;
 }
 .basket.active {
   left: 0;

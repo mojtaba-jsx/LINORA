@@ -14,12 +14,14 @@
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   margin: 1rem;
   z-index: 10000;
+  background-color: var(--everglade);
+
 }
 
 .mobile-menu__list-icon {
   width: 2rem;
   height: 2rem;
-  color: var(--green);
+  color: var(--white);
   border-bottom: 2px solid var(--green);
   border-radius: 0.5rem;
 }
