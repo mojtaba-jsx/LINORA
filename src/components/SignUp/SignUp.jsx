@@ -7,7 +7,8 @@ import { IoCloseOutline } from "react-icons/io5";
 import appContext from "../../Contexts/AppContext";
 
 function SignUp() {
-  const { isShowSignUpModal, setIsShowSignUpModal } = useContext(appContext);
+  const { isShowSignUpModal, setIsShowSignUpModal, setIsShowLoginModal } =
+    useContext(appContext);
   return (
     <>
       <div
@@ -45,21 +46,17 @@ function SignUp() {
             <FaRegEye className="signup__form-password-input-show" />
           </label>
           <button className="signup__form-submit">ثبت نام</button>
-          <span className="signup__form-seperator">یا</span>
-          <div className="signup__form__social-signup">
-            <button className="signup__form__social-signup-facebook">
-              ورود با فبسبوک
-              <FaFacebookF className="signup__form__social-signup-facebook-icon" />
-            </button>
-
-            <button className="signup__form__social-signup-google">
-              ورود با گوگل
-              <FaGoogle className="signup__form__social-signup-google-icon" />
-            </button>
-          </div>
           <span className="signup__form-login">
             قبلا حساب کاربری دارید ؟
-            <span className="signup__form-login-link">ورود</span>
+            <span
+              className="signup__form-login-link"
+              onClick={() => {
+                setIsShowSignUpModal(false);
+                setIsShowLoginModal(true);
+              }}
+            >
+              ورود
+            </span>
           </span>
         </form>
       </div>
