@@ -1,7 +1,7 @@
 .login {
   background-color: var(--parisGreen);
   width: 30rem;
-  height: auto;
+  height: 38rem;
   margin: 4rem auto;
   border-radius: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
@@ -260,7 +260,7 @@
   transform: translateY(-2px);
 }
 
-.login-form__social__login__google-icon {
+.login-form__social__login__facebook-icon {
   width: 2rem;
   height: 2rem;
   color: var(--bluish);

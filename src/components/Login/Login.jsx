@@ -53,16 +53,16 @@ function Login() {
               <span className="">مرا به خاطر بسپار</span>
             </label>
             <span className="login-form__options-reset">
-              رمز عبور را فراموش کرده اید ؟
+              بازیابی رمز عبور
             </span>
           </div>
           <button className="login-form__submit">ورود</button>
           <span className="login-form__seperator">یا</span>
 
           <div className="login-form__social-login">
-            <button className="login-form__social-login__google">
+            <button className="login-form__social-login__facebook">
               ورود با فیسبوک
-              <FaFacebookF className="login-form__social__login__google-icon" />
+              <FaFacebookF className="login-form__social__login__facebook-icon" />
             </button>
 
             <button className="login-form__social-login__google">
