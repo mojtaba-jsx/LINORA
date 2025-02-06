@@ -322,6 +322,10 @@ body {
   .login{
 
   }
+  /* * SignUp Component */
+  .signup {
+    width: 20rem;
+  }
 }
 @media screen and (max-width: 480px) {
   /* * Basket Component */
@@ -334,6 +338,10 @@ body {
       height: 38rem;
       top: 4rem;
   } 
+    /* * SignUp Component */
+    .signup {
+      height: 38rem;
+    }
 }
 @media screen and (max-width: 320px) {
 }
