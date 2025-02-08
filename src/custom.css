@@ -253,6 +253,12 @@ body {
     flex-wrap: wrap;
     gap: 2rem;
   }
+  /* * TrendStyle Component */
+  .trendstyle__wrapper{
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
 }
 @media screen and (max-width: 992px) {
   /* * Fashion Component */
@@ -295,6 +301,15 @@ body {
   .features__box {
     width: 100%;
   }
+
+  /* * TrendStyle Component */
+  .trendstyle__right-title{
+    font-size: 5rem;
+    text-align: center;
+  }
+  .trendstyle__right-text{
+    font-size: 1.4rem;
+  }
 }
 @media screen and (max-width: 576px) {
   /* * Search Component */
@@ -326,6 +341,15 @@ body {
   .signup {
     width: 20rem;
   }
+  /* * TrendStyle Component */
+    .trendstyle__right-title{
+      font-size: 3rem;
+    }
+    .trendstyle__right-text{
+      font-size: 1rem;
+      text-align: center;
+      line-height: 1.4rem;
+    }
 }
 @media screen and (max-width: 480px) {
   /* * Basket Component */

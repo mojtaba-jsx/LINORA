@@ -1,5 +1,6 @@
 import React from "react";
 import "./TrendStyle.css";
+import { HiOutlineSpeakerphone } from "react-icons/hi";
 function TrendStyle() {
   return (
     <div className="trendstyle">
@@ -9,6 +10,7 @@ function TrendStyle() {
             <h1 className="trendstyle__right-title">ترندهای این هفته</h1>
             <p className="trendstyle__right-text">
               از استایل های ترند هر هفته با خبر شوید
+              <HiOutlineSpeakerphone className="trendstyle__right-icon" />
             </p>
           </div>
 
