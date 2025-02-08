@@ -9,6 +9,7 @@ import Login from '../Login/Login'
 import SignUp from '../SignUp/SignUp'
 import Basket from '../Basket/Basket'
 import TrendStyle from '../TrendStyle/TrendStyle'
+import SpecialProducts from '../SpecialProducts/SpecialProducts'
 function Home() {
   return (
     <>
@@ -21,6 +22,7 @@ function Home() {
       <SignUp/>
       <Basket/>
       <TrendStyle/>
+      <SpecialProducts/>
 
     </>
   );
