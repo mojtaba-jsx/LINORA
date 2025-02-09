@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./SpecialProducts.css";
-
+import MainTitle from '../MainTitle/MainTitle'
 function SpecialProducts() {
   const [productsData, setProductsData] = useState([
     {
@@ -50,8 +50,9 @@ function SpecialProducts() {
     },
   ]);
   return (
-    <div className="special-products">
-      <div className="conatiner">
+    <div className="container">
+      <div className="special-products">
+        <MainTitle title={'محصولات ویژه'}/>
         <div className="special-products__wrapper">
           <div className="special-products__right">
             <div className="special-products__box right-box">

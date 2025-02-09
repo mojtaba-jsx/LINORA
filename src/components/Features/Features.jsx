@@ -4,15 +4,13 @@ import { TbTruckDelivery } from "react-icons/tb";
 import { FaHeadset } from "react-icons/fa";
 import { MdOutlineSecurity } from "react-icons/md";
 import { FaUndoAlt } from "react-icons/fa";
-import { FaRocket } from "react-icons/fa6";
+import MainTitle from '../MainTitle/MainTitle'
+
 function Features() {
   return (
     <div className="features">
       <div className="container">
-        <h1 className="features-title">
-          خدمات ما 
-          <FaRocket className="features-title__icon" />
-        </h1>
+        <MainTitle title={'خدمات ما'}/>
         <div className="features__wrapper">
           <div className="features__box">
             <TbTruckDelivery className="features-box-icon" />
