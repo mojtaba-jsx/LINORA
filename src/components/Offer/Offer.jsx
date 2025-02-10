@@ -12,6 +12,7 @@ function Offer() {
             alt=""
             className="offer__image"
           />
+          <div className="glass-overlay"></div>
         </div>
       </div>
     </div>

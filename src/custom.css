@@ -300,6 +300,13 @@ body {
   .search-label {
     width: 30rem;
   }
+  .offer__image{
+    height: 10rem;
+    width: 88%;
+    display: block;
+    margin: 0 auto;
+  }
+
 }
 @media screen and (max-width: 768px) {
   /* * Fashion Component */
@@ -332,6 +339,8 @@ body {
   .trendstyle__right-text{
     font-size: 1.4rem;
   }
+  
+
 }
 @media screen and (max-width: 576px) {
   /* * Search Component */
