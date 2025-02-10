@@ -246,6 +246,28 @@ body {
     bottom: -0.5rem;
     width: 100%;
   }
+  /* * SpeacialProducts Component */
+  .special-products__wrapper{
+    flex-direction: column;
+  }
+  .special-products__right{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .special-products__box-image{
+    max-width: 40rem !important;
+    object-fit: contain;
+    
+  }
+
+  .special-products__left{
+    width: 100%;
+    margin-top: 2rem;
+    row-gap: 1rem;
+  }
+  .special-products__box{
+    /* margin-bottom: 1rem; */
+  }
 }
 @media screen and (max-width: 1200px) {
   /* * Features Component */
@@ -365,6 +387,12 @@ body {
     /* * SignUp Component */
     .signup {
       height: 38rem;
+    }
+
+    /* *Main Title Component */
+    .main-title__text{
+      font-size: 2.8rem;
+      margin: 1rem;
     }
 }
 @media screen and (max-width: 320px) {
