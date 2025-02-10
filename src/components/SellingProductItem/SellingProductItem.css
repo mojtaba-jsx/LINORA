@@ -1,0 +1,50 @@
+.selling-product-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 0.5rem;
+  width: 30rem;
+  height: 10rem;
+  margin-top: 1rem;
+  flex: 1 1 calc(33.333% - 16px); /* تقسیم به سه بخش، کم کردن گپ */
+  max-width: calc(33.333% - 16px);
+}
+
+.selling-product-item__right {
+  height: 100%;
+}
+
+.selling-product-item__right-image {
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
+.selling-product-item__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  row-gap: 1rem;
+  margin-left: 1rem;
+}
+
+.selling-product-item__left-title {
+  font-family: "parastoo-bold", Courier, monospace;
+  font-size: 1.2rem;
+}
+
+.selling-product-item__left-caption {
+}
+
+.selling-product-item__left__prices {
+}
+
+.selling-product-item__left__prices-final {
+}
+
+.selling-product-item__left__prices-original {
+}
+
+
