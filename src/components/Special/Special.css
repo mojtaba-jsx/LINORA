@@ -1,0 +1,81 @@
+.speacial {
+  margin-top: 4rem;
+}
+
+.speacial-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* column-gap: 1rem; */
+}
+
+.speacial__box {
+  background-color: var(--snowDrift);
+  position: relative;
+  font-family: "sogand", Courier, monospace;
+  width: 50%;
+  cursor: pointer;
+}
+
+.speacial__box:hover .speacial__box-image {
+        transform: scale(1);
+}
+.speacial__box:nth-child(2) {
+  background-color: var(--greenWhite);
+}
+
+.speacial__box-image {
+  display: block;
+  z-index: 10;
+  margin: 0 auto;
+  transition: all 120ms ease-in;
+    transform: scale(0.99);
+}
+
+.speacial__box__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 1rem;
+}
+.speacial__box__info2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 1rem;
+}
+
+.speacial__box__info-title {
+  font-size: 4rem;
+  opacity: 0.4;
+}
+
+.speacial__box__info-year {
+  font-size: 8rem;
+  z-index: 9;
+  opacity: 0.2;
+
+}
+
+.speacial__box__info-link {
+  padding: 2rem;
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  color: var(--black);
+  font-family: "parastoo-bold", Courier, monospace;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  transition: all 120ms ease-in;
+}
+.speacial__box__info-link:hover {
+  transform: translateY(-10px);
+}

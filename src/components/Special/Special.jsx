@@ -27,7 +27,7 @@ function Special() {
               alt=""
               className="speacial__box-image"
             />
-            <div className="speacial__box__info">
+            <div className="speacial__box__info2">
               <span className="speacial__box__info-title">انحصاری</span>
               <span className="speacial__box__info-year">20</span>
               <Link to={"/"} className="speacial__box__info-link">
