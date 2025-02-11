@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./SellingProducts.css";
 import MainTitle from "../MainTitle/MainTitle";
 import SellingProductItem from "../SellingProductItem/SellingProductItem";
+import { IoIosArrowBack } from "react-icons/io";
 function SellingProducts() {
   const [sellingProductsInfos, setSellingProductsInfos] = useState([
     {
@@ -86,7 +87,8 @@ function SellingProducts() {
             <MainTitle title={"محصولات در حال فروش"} />
           </div>
           <Link className="selling-products__header-link" to={"/"}>
-            مشاهده همه محصولات
+            مشاهده همه 
+            <IoIosArrowBack className="selling-products__header-icon" />
           </Link>
         </div>
 

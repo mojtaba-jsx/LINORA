@@ -3,13 +3,17 @@
   align-items: center;
   justify-content: space-between;
   column-gap: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: all 120ms ease-in;
+  cursor: pointer;
   border-radius: 0.5rem;
-  width: 30rem;
+  width: 25rem;
   height: 10rem;
   margin-top: 1rem;
-  flex: 1 1 calc(33.333% - 16px); /* تقسیم به سه بخش، کم کردن گپ */
-  max-width: calc(33.333% - 16px);
+  
+}
+
+.selling-product-item:hover{
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .selling-product-item__right {

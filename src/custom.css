@@ -168,7 +168,7 @@ body {
   --bluish: #3674b5;
   --amaranth: #de3163;
   --whiteSmoke: #f5f5f5;
-  --snowDrift: #F9F9F9;
+  --snowDrift: #f9f9f9;
 }
 
 /* ! Scrollbar Styles */
@@ -247,26 +247,26 @@ body {
     width: 100%;
   }
   /* * SpeacialProducts Component */
-  .special-products__wrapper{
+  .special-products__wrapper {
     flex-direction: column;
   }
-  .special-products__right{
+  .special-products__right {
     width: 80%;
     margin: 0 auto;
   }
-  .special-products__box-image{
+  .special-products__box-image {
     max-width: 40rem !important;
     object-fit: contain;
-    
   }
 
-  .special-products__left{
+  .special-products__left {
     width: 100%;
     margin-top: 2rem;
     row-gap: 1rem;
   }
-  .special-products__box{
-    /* margin-bottom: 1rem; */
+  /* * SpeacialProducts Component */
+  .selling-product-item {
+    margin: 1rem auto;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -276,11 +276,10 @@ body {
     gap: 2rem;
   }
   /* * TrendStyle Component */
-  .trendstyle__wrapper{
+  .trendstyle__wrapper {
     flex-direction: column;
     row-gap: 2rem;
   }
-
 }
 @media screen and (max-width: 992px) {
   /* * Fashion Component */
@@ -300,13 +299,25 @@ body {
   .search-label {
     width: 30rem;
   }
-  .offer__image{
+  .offer__image {
     height: 10rem;
     width: 88%;
     display: block;
     margin: 0 auto;
   }
-
+  /* * SpeacialProducts Component */
+  .selling-product-item {
+    width: 80%;
+  }
+  .selling-product-item__left-title{
+    font-size: 1rem;
+  }
+  .main-title__text {
+    font-size: 2rem;
+  }
+  .selling-products__header-link {
+    margin-left: 2rem;
+  }
 }
 @media screen and (max-width: 768px) {
   /* * Fashion Component */
@@ -332,15 +343,13 @@ body {
   }
 
   /* * TrendStyle Component */
-  .trendstyle__right-title{
+  .trendstyle__right-title {
     font-size: 5rem;
     text-align: center;
   }
-  .trendstyle__right-text{
+  .trendstyle__right-text {
     font-size: 1.4rem;
   }
-  
-
 }
 @media screen and (max-width: 576px) {
   /* * Search Component */
@@ -365,22 +374,29 @@ body {
   .login-form__social-login__facebook {
     text-indent: -99999px;
   }
-  .login{
-
+  .login {
   }
   /* * SignUp Component */
   .signup {
     width: 20rem;
   }
   /* * TrendStyle Component */
-    .trendstyle__right-title{
-      font-size: 3rem;
-    }
-    .trendstyle__right-text{
-      font-size: 1rem;
-      text-align: center;
-      line-height: 1.4rem;
-    }
+  .trendstyle__right-title {
+    font-size: 3rem;
+  }
+  .trendstyle__right-text {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.4rem;
+  }
+  /* * SpeacialProducts Component */
+  .main-title__text {
+    font-size: 1.4rem;
+  }
+  .selling-products__header{
+    flex-direction: column;
+    
+  }
 }
 @media screen and (max-width: 480px) {
   /* * Basket Component */
@@ -389,20 +405,20 @@ body {
   }
   /* * Login Component */
 
-  .login{
-      height: 38rem;
-      top: 4rem;
-  } 
-    /* * SignUp Component */
-    .signup {
-      height: 38rem;
-    }
+  .login {
+    height: 38rem;
+    top: 4rem;
+  }
+  /* * SignUp Component */
+  .signup {
+    height: 38rem;
+  }
 
-    /* *Main Title Component */
-    .main-title__text{
-      font-size: 2.8rem;
-      margin: 1rem;
-    }
+  /* *Main Title Component */
+  .main-title__text {
+    font-size: 2.8rem;
+    margin: 1rem;
+  }
 }
 @media screen and (max-width: 320px) {
 }
