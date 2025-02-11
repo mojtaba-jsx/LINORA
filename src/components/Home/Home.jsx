@@ -12,6 +12,7 @@ import TrendStyle from '../TrendStyle/TrendStyle'
 import SpecialProducts from '../SpecialProducts/SpecialProducts'
 import Offer from '../Offer/Offer'
 import SellingProducts from '../SellingProducts/SellingProducts'
+import Special from '../Special/Special'
 function Home() {
   return (
     <>
@@ -27,6 +28,7 @@ function Home() {
       <SpecialProducts/>
       <Offer/>
       <SellingProducts/>
+      <Special/>
 
     </>
   );
