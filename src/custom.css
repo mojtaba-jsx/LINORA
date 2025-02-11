@@ -281,6 +281,14 @@ body {
     flex-direction: column;
     row-gap: 2rem;
   }
+  /* * Special Component */
+  .speacial-wrapper{
+    flex-direction: column;
+  }
+  .speacial__box{
+    width: 80%;
+    margin: 1rem auto;
+  }
 }
 @media screen and (max-width: 992px) {
   /* * Fashion Component */
@@ -319,6 +327,10 @@ body {
   .selling-products__header-link {
     margin-left: 2rem;
   }
+    /* * Special Component */
+    .speacial__box-image{
+      width: 30rem;
+    }
 }
 @media screen and (max-width: 768px) {
   /* * Fashion Component */
@@ -351,6 +363,27 @@ body {
   .trendstyle__right-text {
     font-size: 1.4rem;
   }
+      /* * Special Component */
+      .speacial__box-image{
+        width: 20rem;
+      }
+      .speacial__box__info-link{
+        padding: 1rem;
+        font-size: 1.2rem;
+      }
+      .speacial__box__info-title{
+        font-size: 2rem;
+      }
+      .speacial__box__info-year{
+        font-size: 4rem;
+      }
+      .speacial__box__info2{
+        right: 0;
+        
+      }
+      .speacial__box__info{
+        left: 0;
+      }
 }
 @media screen and (max-width: 576px) {
   /* * Search Component */
