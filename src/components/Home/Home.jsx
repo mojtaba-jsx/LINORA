@@ -13,6 +13,7 @@ import SpecialProducts from '../SpecialProducts/SpecialProducts'
 import Offer from '../Offer/Offer'
 import SellingProducts from '../SellingProducts/SellingProducts'
 import Special from '../Special/Special'
+import Category from '../Category/Category'
 function Home() {
   return (
     <>
@@ -29,6 +30,7 @@ function Home() {
       <Offer/>
       <SellingProducts/>
       <Special/>
+      <Category/>
 
     </>
   );
