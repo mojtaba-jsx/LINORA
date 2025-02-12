@@ -1,5 +1,9 @@
+.category {
+  margin-top: 8rem;
+  padding: 1rem;
+}
 
-
-.category{
-    margin-top: 8rem;
+.category-swiper {
+  padding-bottom: 4rem;
+  padding-top: 2rem;
 }
