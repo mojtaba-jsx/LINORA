@@ -453,6 +453,15 @@ body {
     font-size: 2.8rem;
     margin: 1rem;
   }
+  /* * TrendStyle Component */
+  .trendstyle__right__email-input{
+    font-size: 1rem;
+  }
+  .trendstyle__right__email-input-btn-icon{
+    width: 2.4rem;
+    height: 2.4rem;
+    top: 0.5rem;
+  }
 }
 @media screen and (max-width: 320px) {
 }

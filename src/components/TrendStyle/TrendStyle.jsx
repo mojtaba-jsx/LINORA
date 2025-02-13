@@ -1,6 +1,7 @@
 import React from "react";
 import "./TrendStyle.css";
 import { HiOutlineSpeakerphone } from "react-icons/hi";
+import { BiEnvelope } from "react-icons/bi";
 function TrendStyle() {
   return (
     <div className="trendstyle">
@@ -12,6 +13,16 @@ function TrendStyle() {
               از استایل های ترند هر هفته با خبر شوید
               <HiOutlineSpeakerphone className="trendstyle__right-icon" />
             </p>
+            <div className="trendstyle__right__email">
+              <label className="trendstyle__right__email-label">
+                <input
+                  type="text"
+                  className="trendstyle__right__email-input"
+                  placeholder="ایمیل خود را وارد کنید "
+                />
+                  <BiEnvelope className="trendstyle__right__email-input-btn-icon" />
+              </label>
+            </div>
           </div>
 
           <div className="trendstyle__left">
