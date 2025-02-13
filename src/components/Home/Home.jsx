@@ -14,6 +14,7 @@ import Offer from '../Offer/Offer'
 import SellingProducts from '../SellingProducts/SellingProducts'
 import Special from '../Special/Special'
 import Category from '../Category/Category'
+import TopBrands from '../TopBrands/TopBrands'
 function Home() {
   return (
     <>
@@ -31,6 +32,7 @@ function Home() {
       <SellingProducts/>
       <Special/>
       <Category/>
+      <TopBrands/>
 
     </>
   );
