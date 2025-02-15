@@ -15,6 +15,7 @@ import SellingProducts from '../SellingProducts/SellingProducts'
 import Special from '../Special/Special'
 import Category from '../Category/Category'
 import TopBrands from '../TopBrands/TopBrands'
+import ReviewSlider from '../ReviewSlider/ReviewSlider'
 function Home() {
   return (
     <>
@@ -33,6 +34,7 @@ function Home() {
       <Special/>
       <Category/>
       <TopBrands/>
+      <ReviewSlider/>
 
     </>
   );
