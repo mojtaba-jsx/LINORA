@@ -14,14 +14,14 @@ function ReviewSlider() {
       username: "علی کریمی",
       userImage: "./src/assets/images/review-slider/user.png",
       body: "محصولات خوب و با کیفیتی دارید و تحویل به موقع و سریع هست ممنون",
-      star:4
+      star:2
     },
     {
       id: 2,
       username: "علی کریمی",
       userImage: "./src/assets/images/review-slider/user.png",
       body: "محصولات خوب و با کیفیتی دارید و تحویل به موقع و سریع هست ممنون",
-      star:4
+      star:4.5
     },
     {
       id: 3,
@@ -35,14 +35,14 @@ function ReviewSlider() {
       username: "علی کریمی",
       userImage: "./src/assets/images/review-slider/user.png",
       body: "محصولات خوب و با کیفیتی دارید و تحویل به موقع و سریع هست ممنون",
-      star:4
+      star:4.5
     },
     {
       id: 5,
       username: "علی کریمی",
       userImage: "./src/assets/images/review-slider/user.png",
       body: "محصولات خوب و با کیفیتی دارید و تحویل به موقع و سریع هست ممنون",
-      star:4
+      star:2.5
     },
   ]);
   return (

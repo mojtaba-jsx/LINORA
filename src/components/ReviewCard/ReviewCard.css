@@ -25,6 +25,7 @@
 
 .review-card__top-stars{
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     column-gap: 0.5rem;
 }
