@@ -169,8 +169,8 @@ body {
   --amaranth: #de3163;
   --whiteSmoke: #f5f5f5;
   --snowDrift: #f9f9f9;
-  --greenWhite: #ECE7E3;
-  --lightMustard:#FFCF50;
+  --greenWhite: #ece7e3;
+  --lightMustard: #ffcf50;
 }
 
 /* ! Scrollbar Styles */
@@ -283,10 +283,19 @@ body {
     row-gap: 2rem;
   }
   /* * Special Component */
-  .speacial-wrapper{
+  .speacial-wrapper {
     flex-direction: column;
   }
-  .speacial__box{
+  .speacial__box {
+    width: 80%;
+    margin: 1rem auto;
+  }
+  /* * FashionBetter Component */
+  .fashion-better__wrapper {
+    flex-direction: column;
+  }
+  .fashion-better__right,
+  .fashion-better__left {
     width: 80%;
     margin: 1rem auto;
   }
@@ -319,7 +328,7 @@ body {
   .selling-product-item {
     width: 80%;
   }
-  .selling-product-item__left-title{
+  .selling-product-item__left-title {
     font-size: 1rem;
   }
   .main-title__text {
@@ -328,15 +337,15 @@ body {
   .selling-products__header-link {
     margin-left: 2rem;
   }
-    /* * Special Component */
-    .speacial__box-image{
-      width: 30rem;
-    }
-    
-/* * Review Card */
-    .review-card{
-      width: 18rem;
-    }
+  /* * Special Component */
+  .speacial__box-image {
+    width: 30rem;
+  }
+
+  /* * Review Card */
+  .review-card {
+    width: 18rem;
+  }
 }
 @media screen and (max-width: 768px) {
   /* * Fashion Component */
@@ -369,27 +378,35 @@ body {
   .trendstyle__right-text {
     font-size: 1.4rem;
   }
-      /* * Special Component */
-      .speacial__box-image{
-        width: 20rem;
-      }
-      .speacial__box__info-link{
-        padding: 1rem;
-        font-size: 1.2rem;
-      }
-      .speacial__box__info-title{
-        font-size: 2rem;
-      }
-      .speacial__box__info-year{
-        font-size: 4rem;
-      }
-      .speacial__box__info2{
-        right: 0;
-        
-      }
-      .speacial__box__info{
-        left: 0;
-      }
+  /* * Special Component */
+  .speacial__box-image {
+    width: 20rem;
+  }
+  .speacial__box__info-link {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+  .speacial__box__info-title {
+    font-size: 2rem;
+  }
+  .speacial__box__info-year {
+    font-size: 4rem;
+  }
+  .speacial__box__info2 {
+    right: 0;
+  }
+  .speacial__box__info {
+    left: 0;
+  }
+
+  /* * FashionBetter Component */
+  .fashion-better__right__info-title{
+    font-size: 3.4rem;
+    text-align: center;
+  }
+  .fashion-better__right__info{
+    margin-top: 2rem;
+  }
 }
 @media screen and (max-width: 576px) {
   /* * Search Component */
@@ -433,9 +450,30 @@ body {
   .main-title__text {
     font-size: 1.4rem;
   }
-  .selling-products__header{
+  .selling-products__header {
     flex-direction: column;
-    
+  }
+  /* * FashionBetter Component */
+  .fashion-better__right__info-title{
+    font-size: 2rem;
+  }
+  .fashion-better__right__info-text{
+    font-size: 1rem;
+  }
+  .fashion-better__right__info-link{
+    margin-top: 1rem;
+    font-size: 1rem;
+    width: 10rem;
+    margin: 0 auto;
+  }
+  .fashion-better__right__info-link-icon{
+    left: 1rem;
+  }
+  .fashion-better__right__info{
+    top: -1rem;
+  }
+  .fashion-better__right,.fashion-better__left{
+    height: 30rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -460,10 +498,10 @@ body {
     margin: 1rem;
   }
   /* * TrendStyle Component */
-  .trendstyle__right__email-input{
+  .trendstyle__right__email-input {
     font-size: 1rem;
   }
-  .trendstyle__right__email-input-btn-icon{
+  .trendstyle__right__email-input-btn-icon {
     width: 2.4rem;
     height: 2.4rem;
     top: 0.5rem;
@@ -471,4 +509,3 @@ body {
 }
 @media screen and (max-width: 320px) {
 }
-
