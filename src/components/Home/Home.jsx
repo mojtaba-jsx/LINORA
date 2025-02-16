@@ -16,6 +16,7 @@ import Special from '../Special/Special'
 import Category from '../Category/Category'
 import TopBrands from '../TopBrands/TopBrands'
 import ReviewSlider from '../ReviewSlider/ReviewSlider'
+import FashionBetter from '../FashionBetter/FashionBetter'
 function Home() {
   return (
     <>
@@ -35,6 +36,7 @@ function Home() {
       <Category/>
       <TopBrands/>
       <ReviewSlider/>
+      <FashionBetter/>
 
     </>
   );
