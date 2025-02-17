@@ -17,6 +17,7 @@ import Category from '../Category/Category'
 import TopBrands from '../TopBrands/TopBrands'
 import ReviewSlider from '../ReviewSlider/ReviewSlider'
 import FashionBetter from '../FashionBetter/FashionBetter'
+import InboxTips from '../InboxTips/InboxTips'
 function Home() {
   return (
     <>
@@ -37,7 +38,7 @@ function Home() {
       <TopBrands/>
       <ReviewSlider/>
       <FashionBetter/>
-
+      <InboxTips/>
     </>
   );
 }

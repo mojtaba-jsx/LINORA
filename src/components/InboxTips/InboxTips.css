@@ -1,0 +1,55 @@
+.inbox-tips {
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+}
+
+.inbox-tips__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inbox-tips__right {
+}
+
+.inbox-tips__right-title {
+  font-family: "parastoo-bold", Courier, monospace;
+  font-size: 2rem;
+}
+
+.inbox-tips__right-text {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.inbox-tips__left {
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.inbox-tips__left-input {
+  padding: 1rem;
+  width: 20rem;
+  font-family: "parastoo", Courier, monospace;
+  height: 2rem;
+  height: 100%;
+  border: none;
+  outline: none;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.inbox-tips__left-btn {
+  padding: 1rem;
+  font-family: "parastoo-bold", Courier, monospace;
+  background-color: var(--green);
+  color: var(--white);
+  border: none;
+  outline: none;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  height: 100%;
+  cursor: pointer;
+}

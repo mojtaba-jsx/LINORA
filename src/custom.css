@@ -299,6 +299,14 @@ body {
     width: 80%;
     margin: 1rem auto;
   }
+  /* * InboxTips Component */
+  .inbox-tips__wrapper{
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .inbox-tips__right-text,.inbox-tips__right-title{
+    text-align: center;
+  }
 }
 @media screen and (max-width: 992px) {
   /* * Fashion Component */
@@ -406,6 +414,19 @@ body {
   }
   .fashion-better__right__info{
     margin-top: 2rem;
+  }
+  /* * InboxTips Component */
+  .inbox-tips__right-title{
+    font-size: 1.2rem;
+    width: 18rem;
+    line-height: 1.4rem;
+    margin: 0 auto;
+  }
+  .inbox-tips__right-text{
+    font-size: 1rem;
+  }
+  .inbox-tips__left-input{
+    width: 12rem;
   }
 }
 @media screen and (max-width: 576px) {
