@@ -1,0 +1,233 @@
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  column-gap: 2rem;
+  /* border-top: 2px solid var(--black); */
+  border-radius: 0.5rem;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.footer__wrapper > ul {
+  /* background-color: red; */
+  height: 20rem;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+
+  padding: 1rem;
+}
+
+.footer__col1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  row-gap: 2rem;
+  width: 20%;
+}
+
+.footer__col1-item {
+}
+
+.footer__col1-logo {
+  width: 8rem !important;
+  height: 4rem !important;
+}
+
+.footer__col1-text {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  text-align: justify;
+}
+.footer__col1-text-highlight {
+  font-family: "parastoo-bold", Courier, monospace;
+}
+
+.footer__col1-copyright {
+  font-family: "parastoo-bold", Courier, monospace;
+}
+
+.footer__col2 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  width: 20%;
+  align-items: center;
+  text-align: center;
+}
+
+.footer__col2-item:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  font-family: "parastoo-bold", Courier, monospace;
+  font-size: 1.2rem;
+}
+
+.footer__col2-logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  column-gap: 1rem;
+}
+.footer__col2-logos-telegram,
+.footer__col2-logos-instagram,
+.footer__col2-logos-whatsapp,
+.footer__col2-logos-github {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.footer__col2-logos-telegram {
+  color: var(--bluish);
+}
+
+.footer__col2-logos-instagram {
+  color: var(--red);
+}
+
+.footer__col2-logos-whatsapp {
+  color: var(--green);
+}
+
+.footer__col2-logos-github {
+}
+
+.footer__col2-item:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.footer__col2-call {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  display: block;
+  font-family: "parastoo-bold", Courier, monospace;
+  font-size: 1.2rem;
+}
+
+.footer__col2-call-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.footer__col2-number {
+  direction: ltr;
+}
+
+.footer__col2-location {
+    line-height: 1.4rem;
+}
+
+.footer__col2-location-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.footer__col3 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  width: 20%;
+  align-items: center;
+  text-align: center;
+}
+
+.footer__col3-item:nth-child(1) {
+  font-family: "parastoo-bold", Courier, monospace;
+  font-size: 1.2rem;
+}
+
+
+.footer__col3-link {
+  color: var(--black);
+  transition: all 120ms ease-in;
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+  width: 100%;
+  height: 100%;
+}
+.footer__col3-link:hover{
+    color: var(--white);
+    background-color: var(--green);
+    
+}
+
+.footer__col4 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  width: 20%;
+  align-items: center;
+  text-align: center;
+}
+
+.footer__col4-item:nth-child(1) {
+  font-family: "parastoo-bold", Courier, monospace;
+  font-size: 1.2rem;
+}
+
+.footer__col4-link {
+  color: var(--black);
+  transition: all 120ms ease-in;
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+
+}
+.footer__col4-link:hover{
+    color: var(--white);
+    background-color: var(--green);
+    
+}
+
+.footer__col5 {
+  width: 20%;
+}
+.footer__col5-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 2rem;
+  align-items: center;
+  text-align: center;
+}
+.footer__col5-image {
+  width: 4rem;
+  cursor: pointer;
+}
+
+.sub-footer {
+  margin-top: 2rem;
+}
+
+.sub-footer__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+}
+
+.sub-footer__info-icon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--red);
+}
+
+.sub-footer__info-link {
+  color: var(--black);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.sub-footer__text-logo {
+  width: 2rem;
+  height: 2rem;
+  color: var(--black);
+}

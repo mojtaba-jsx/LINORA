@@ -24,8 +24,9 @@ function Footer() {
             </li>
             <li className="footer__col1-item">
               <p className="footer__col1-text">
-                لینورا، فروشگاهی تخصصی برای لباس‌های مردانه وزنه، جایی که کیفیت،
-                استایل و راحتی را در کنار هم تجربه می‌کنید
+                <span className="footer__col1-text-highlight">لینورا</span>{" "}
+                فروشگاهی تخصصی برای لباس‌های مردانه وزنه، جایی که کیفیت، استایل
+                و راحتی را در کنار هم تجربه می‌کنید
               </p>
             </li>
             <li className="footer__col1-item">
@@ -47,7 +48,7 @@ function Footer() {
             </li>
             <li className="footer__col2-item">
               <span className="footer__col2-call">
-                <IoIosCall className="footer__col2-call-icon" />
+                {/* <IoIosCall className="footer__col2-call-icon" /> */}
                 تماس با ما
               </span>
               <span className="footer__col2-number">+989218750654</span>
@@ -63,7 +64,7 @@ function Footer() {
 
             <li className="footer__col3-item">
               <Link to={"/"} className="footer__col3-link">
-                صفخه اصلی
+                صفحه اصلی
               </Link>
             </li>
 
@@ -87,16 +88,24 @@ function Footer() {
           <ul className="footer__col4">
             <li className="footer__col4-item">فروشگاه</li>
             <li className="footer__col4-item">
-              <Link to={"/"}>لباس مردانه</Link>
+              <Link className="footer__col4-link" to={"/"}>
+                لباس مردانه
+              </Link>
             </li>
             <li className="footer__col4-item">
-              <Link to={"/"}>لباس زنانه</Link>
+              <Link className="footer__col4-link" to={"/"}>
+                لباس زنانه
+              </Link>
             </li>
             <li className="footer__col4-item">
-              <Link to={"/"}>عینک</Link>
+              <Link className="footer__col4-link" to={"/"}>
+                عینک
+              </Link>
             </li>
             <li className="footer__col4-item">
-              <Link to={"/"}>کلاه</Link>
+              <Link className="footer__col4-link" to={"/"}>
+                کلاه
+              </Link>
             </li>
           </ul>
 
@@ -132,13 +141,15 @@ function Footer() {
         </div>
         {/* ! SubFooter */}
         <div className="sub-footer">
-          <span className="sub-footer__text">توسعه داده شده با</span>
-          <FaHeart className="sub-footer__logo" />
-          <span className="sub-footer__text">توسط</span>
-          <Link to={"/"}>
+          <span className="sub-footer__info">
+            توسعه داده شده با
+            <FaHeart className="sub-footer__info-icon" />
+            توسط
+            <Link className="sub-footer__info-link" to={"/"}>
             Mojtaba.JSX
-            <FaGithub className="sub-footer__logo" />
-          </Link>
+            <FaGithub className="sub-footer__text-logo" />
+            </Link>
+          </span>
         </div>
       </div>
     </div>

@@ -307,6 +307,23 @@ body {
   .inbox-tips__right-text,.inbox-tips__right-title{
     text-align: center;
   }
+  /* * Footer Component */
+  .footer__wrapper{
+    flex-wrap: wrap;
+  }
+  .footer__col1{
+    width: 40%;
+  }
+  .footer__col2{
+    width: 40%;
+  }
+  .footer__col3{
+    width: 40%;
+  }
+  .footer__col4{
+    width: 40%;
+  }
+
 }
 @media screen and (max-width: 992px) {
   /* * Fashion Component */
@@ -496,6 +513,36 @@ body {
   .fashion-better__right,.fashion-better__left{
     height: 30rem;
   }
+    /* * Footer Component */
+    .footer__wrapper{
+      flex-wrap: wrap;
+    }
+    .footer__col1{
+      width: 80%;
+
+    }
+    .footer__col2{
+      width: 80%;
+      height: auto;
+      justify-content: space-between;
+    }
+    .footer__col3{
+      width: 80%;
+      justify-content: space-between;
+
+    }
+    .footer__col4{
+      width: 80%;
+      justify-content: space-between;
+
+    }
+    .sub-footer__info{
+      flex-direction: column;
+      row-gap: 1rem;
+    }
+    .footer__col2-logos{
+      flex-direction: column;
+    }
 }
 @media screen and (max-width: 480px) {
   /* * Basket Component */
