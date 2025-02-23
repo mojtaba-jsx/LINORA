@@ -1,0 +1,135 @@
+.signup {
+  height: 100vh;
+  /* overflow: hidden; */
+  /* background-color: red; */
+}
+
+.signup__wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.signup__right,
+.signup__left {
+  width: 50%;
+}
+
+.signup__right {
+  height: 100%;
+  /* background-color: blue; */
+  /* padding: 1rem; */
+  /* overflow: scroll; */
+}
+
+.signup__left {
+  /* background-color: red; */
+  height: 100%;
+}
+
+.signup__left-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.signup__form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.signup__form-title {
+  font-size: 4rem;
+  margin-top: 1rem;
+  font-family: "sogand", Courier, monospace;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.signup__form-title-logo{
+    width: 7rem;
+    height: 4rem;
+}
+
+.signup__form-subtitle {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-family: "parastoo-bold", Courier, monospace;
+}
+
+.signup__form-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup__form-label {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin: 1rem auto;
+  font-weight: bold;
+}
+
+.signup__form-label input {
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  width: 30rem;
+  font-size: 20px;
+  transition: all 120ms ease-in;
+}
+.signup__form-label input:focus{
+    transform: scale(1.04);
+}
+
+.signup__form-name-error,
+.signup__form-email-error {
+  margin: 0rem auto;
+}
+
+.signup__form-hint,
+.signup__form-label-privacy {
+  margin-top: 10px;
+}
+
+.signup__form-btn {
+  width: 20rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  background-color: var(--green);
+  color: var(--white);
+  font-family: "parastoo-bold", Courier, monospace;
+  margin-top: 10px;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  cursor: pointer;
+  transition: all 120ms ease-in;
+  font-size: 19px;
+}
+.signup__form-btn:hover{
+    transform: translateY(-10px);
+}
+
+.signup__form-login {
+  text-align: center;
+  margin-top: 10px;
+}
+.signup__form-login a {
+  font-weight: bold;
+  text-decoration: underline;
+}

@@ -324,6 +324,33 @@ body {
   .footer__col4 {
     width: 40%;
   }
+  /* * Sign Up Page */
+  .signup__left {
+    display: none;
+  }
+  .signup__right {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .signup__form-title {
+    flex-direction: column-reverse;
+    font-size: 2.4rem;
+  }
+  .signup__form-title-logo {
+    width: 4rem;
+    height: 2rem;
+  }
+  .signup__form-subtitle {
+    text-align: center;
+  }
+  .signup__form-hint {
+    text-align: center;
+    width: 29rem;
+    margin: 4px auto;
+  }
+  .signup__form-label-privacy {
+    margin: 10px auto;
+  }
 }
 @media screen and (max-width: 992px) {
   /* * Fashion Component */
@@ -373,7 +400,7 @@ body {
   }
 
   /* * Login Component */
-  .login{
+  .login {
     position: fixed; /* تغییر position */
     top: 40%; /* تنظیم برای قرارگیری در مرکز */
     left: 40%;
@@ -454,7 +481,7 @@ body {
     width: 12rem;
   }
   /* * Login Component */
-  .login{
+  .login {
     position: fixed; /* تغییر position */
     top: 40%; /* تنظیم برای قرارگیری در مرکز */
     left: 40%;
@@ -462,18 +489,16 @@ body {
     width: 24rem;
     overflow-y: scroll;
   }
-  .login-form__social-login{
+  .login-form__social-login {
     flex-direction: column;
   }
   .login-form__social-login button {
     width: 100%;
- 
-
   }
-  .login-form__seperator::before{
+  .login-form__seperator::before {
     width: 8rem;
   }
-  .login-form__seperator::after{
+  .login-form__seperator::after {
     width: 8rem;
   }
 }
@@ -492,10 +517,22 @@ body {
   .basket__box-text {
     font-size: 1.2rem;
   }
-
-  /* * SignUp Component */
-  .signup {
+  /* * SignUp Page */
+  .signup__form-subtitle {
+    font-size: 1rem;
+  }
+  .signup__form-label input {
     width: 20rem;
+  }
+  .signup__form-btn {
+    font-size: 1rem;
+  }
+  .signup__form-label {
+    margin: 10px auto;
+  }
+  .signup__form-hint{
+    width: 20rem;
+    line-height: 1.4rem;
   }
   /* * TrendStyle Component */
   .trendstyle__right-title {
@@ -563,20 +600,6 @@ body {
   .footer__col2-logos {
     flex-direction: column;
   }
-
-  /* * Login Component */
-  .login{
-    position: fixed; /* تغییر position */
-    top: 40%; /* تنظیم برای قرارگیری در مرکز */
-    left: 40%;
-    transform: translate(-14%, -50%); /* قرار دادن دقیق در مرکز */
-    width: 18rem;
-    overflow-y: scroll;
-  }
-  .login-form__options{
-    flex-direction: column;
-    row-gap: 1rem;
-  }
 }
 @media screen and (max-width: 480px) {
   /* * Basket Component */
@@ -584,10 +607,6 @@ body {
     width: 18rem;
   }
 
-  /* * SignUp Component */
-  .signup {
-    height: 38rem;
-  }
 
   /* *Main Title Component */
   .main-title__text {
