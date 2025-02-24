@@ -1,6 +1,7 @@
 import React from "react";
 import "./SignUp.css";
 import { Link } from "react-router-dom";
+import { FaRegEye } from "react-icons/fa";
 function SignUp() {
   return (
     <div className="signup">
@@ -35,6 +36,7 @@ function SignUp() {
               <label className="signup__form-label">
                 رمز عبور
                 <input type="text" className="signup__form-password" />
+                <FaRegEye className="signup__form-password-icon" />
               </label>
               <span className="signup__form-email-error">
                 رمز عبور نامعتبراست
