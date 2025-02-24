@@ -54,7 +54,7 @@ function SignUp() {
 
             <button className="signup__form-btn">ثبت نام</button>
             <span className="signup__form-login">
-              اکانت دارید ؟<Link to={"/"}>وارد شوید</Link>
+              اکانت دارید ؟<Link to={"/auth/login"}>وارد شوید</Link>
             </span>
           </form>
         </div>

@@ -351,6 +351,14 @@ body {
   .signup__form-label-privacy {
     margin: 10px auto;
   }
+
+  /* * Login  Page */
+  .login__left {
+    display: none;
+  }
+  .login__right {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 992px) {
   /* * Fashion Component */
@@ -397,14 +405,6 @@ body {
   /* * Review Card */
   .review-card {
     width: 18rem;
-  }
-
-  /* * Login Component */
-  .login {
-    position: fixed; /* تغییر position */
-    top: 40%; /* تنظیم برای قرارگیری در مرکز */
-    left: 40%;
-    transform: translate(-30%, -50%); /* قرار دادن دقیق در مرکز */
   }
 }
 @media screen and (max-width: 768px) {
@@ -480,27 +480,6 @@ body {
   .inbox-tips__left-input {
     width: 12rem;
   }
-  /* * Login Component */
-  .login {
-    position: fixed; /* تغییر position */
-    top: 40%; /* تنظیم برای قرارگیری در مرکز */
-    left: 40%;
-    transform: translate(-30%, -50%); /* قرار دادن دقیق در مرکز */
-    width: 24rem;
-    overflow-y: scroll;
-  }
-  .login-form__social-login {
-    flex-direction: column;
-  }
-  .login-form__social-login button {
-    width: 100%;
-  }
-  .login-form__seperator::before {
-    width: 8rem;
-  }
-  .login-form__seperator::after {
-    width: 8rem;
-  }
 }
 @media screen and (max-width: 576px) {
   /* * Search Component */
@@ -530,7 +509,7 @@ body {
   .signup__form-label {
     margin: 10px auto;
   }
-  .signup__form-hint{
+  .signup__form-hint {
     width: 20rem;
     line-height: 1.4rem;
   }
@@ -600,13 +579,23 @@ body {
   .footer__col2-logos {
     flex-direction: column;
   }
+  /* * Login Page */
+  .login__form-title {
+    flex-direction: column-reverse;
+  }
+  .login__form-email,
+  .login__form-password {
+    width: 24rem !important;
+  }
+  .login__form-subtitle {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 480px) {
   /* * Basket Component */
   .basket {
     width: 18rem;
   }
-
 
   /* *Main Title Component */
   .main-title__text {
@@ -621,6 +610,27 @@ body {
     width: 2.4rem;
     height: 2.4rem;
     top: 0.5rem;
+  }
+  /* * Login Page */
+  .login__form-title {
+    flex-direction: column-reverse;
+  }
+  .login__form-email,
+  .login__form-password {
+    width: 18rem !important;
+  }
+  .login__form-subtitle {
+    text-align: center;
+  }
+  .login__form-btn {
+    width: 14rem;
+  }
+  .login__form-title{
+    font-size: 2.4rem;
+  }
+  .login__form-title-logo{
+    width: 4rem;
+    height: 2rem;
   }
 }
 @media screen and (max-width: 320px) {
