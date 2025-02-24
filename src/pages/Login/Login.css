@@ -141,7 +141,7 @@
     font-size: 19px;
   }
   .login__form-btn:hover {
-    transform: translateY(-10px);
+    transform: scale(1.04);
   }
   
   .login__form-login {

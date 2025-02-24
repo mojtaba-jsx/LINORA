@@ -120,6 +120,10 @@ body {
 .signup__form-hint,
 .signup__form-label-privacy {
   margin-top: 10px;
+  text-align: center;
+}
+.signup__form-label-privacy{
+  margin: 0.5rem auto;
 }
 
 .signup__form-btn {
@@ -139,7 +143,7 @@ body {
   font-size: 19px;
 }
 .signup__form-btn:hover {
-  transform: translateY(-10px);
+  transform: scale(1.04);
 }
 
 .signup__form-login {
@@ -149,4 +153,56 @@ body {
 .signup__form-login a {
   font-weight: bold;
   text-decoration: underline;
+  color: var(--black);
+}
+
+
+.signup__form-label-privacy {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+
+/* مخفی کردن چک‌باکس پیش‌فرض */
+.signup__form-privacy {
+  display: none;
+}
+
+/* استایل باکس چک‌باکس */
+.custom-checkbox {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+/* وقتی چک‌باکس انتخاب شود */
+.signup__form-privacy:checked + .custom-checkbox {
+  background: #4caf50;
+  border-color: #4caf50;
+}
+
+/* ایجاد تیک */
+.custom-checkbox::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  top: 2px;
+  left: 6px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+/* نمایش تیک هنگام انتخاب */
+.signup__form-privacy:checked + .custom-checkbox::after {
+  opacity: 1;
 }

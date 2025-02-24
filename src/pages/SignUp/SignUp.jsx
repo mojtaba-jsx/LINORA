@@ -49,7 +49,8 @@ function SignUp() {
             </span>
             <label className="signup__form-label-privacy">
               <input type="checkbox" className="signup__form-privacy" />
-              با شرایط و قوانین موافقید .
+              <span className="custom-checkbox"></span>
+              با شرایط و قوانین موافقید.
             </label>
 
             <button className="signup__form-btn">ثبت نام</button>
