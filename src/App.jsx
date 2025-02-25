@@ -24,7 +24,7 @@ function App() {
         setIsShowBasketModal,
       }}
     >
-      <div>{route}</div>;
+      <div>{route}</div>
     </appContext.Provider>
   );
 }

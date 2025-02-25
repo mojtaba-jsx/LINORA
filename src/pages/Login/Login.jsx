@@ -1,9 +1,16 @@
-import React from "react";
+import React ,{useEffect} from "react";
 import { Link } from "react-router-dom";
 import "./Login.css";
 import { FaRegEye } from "react-icons/fa";
 
 function Login() {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = "auto"; // بازگرداندن اسکرول بعد از خروج
+    };
+  }, []);
   return (
     <div className="login">
       <div className="login__wrapper">
