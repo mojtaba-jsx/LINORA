@@ -1,4 +1,4 @@
-import React ,{useEffect} from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Login.css";
 import { FaRegEye } from "react-icons/fa";
@@ -18,11 +18,13 @@ function Login() {
           <form className="login__form">
             <h1 className="login__form-title">
               وارد شوید
-              <img
-                src="../src/assets/images/LogoImage/LINORA2.png"
-                alt=""
-                className="login__form-title-logo"
-              />
+              <Link to={'/'}>
+                <img
+                  src="../src/assets/images/LogoImage/LINORA2.png"
+                  alt=""
+                  className="login__form-title-logo"
+                />
+              </Link>
             </h1>
             <h2 className="login__form-subtitle">
               وارد حساب کاربری خود شوید .

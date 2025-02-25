@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { CiSearch } from "react-icons/ci";
@@ -10,7 +11,7 @@ import appContext from "../../Contexts/AppContext";
 function Navbar() {
   const { setIsShowSearchModal, setIsShowLoginModal, setIsShowBasketModal } =
     useContext(appContext);
-
+    const navigate = useNavigate();
   return (
     <div className="navabr__wrapper">
       <div className="container">
@@ -110,12 +111,17 @@ function Navbar() {
 
             <span
               className="navbar-left__login"
-              onClick={() => setIsShowLoginModal(true)}
+              onClick={() => {
+                navigate("/auth/signup");
+              }}
             >
               <CiUser className="navbar-left__icon" />
             </span>
             <span className="navbar-left__basket">
-              <CiShoppingBasket className="navbar-left__icon" onClick={()=>setIsShowBasketModal(true)} />
+              <CiShoppingBasket
+                className="navbar-left__icon"
+                onClick={() => setIsShowBasketModal(true)}
+              />
             </span>
           </div>
         </div>

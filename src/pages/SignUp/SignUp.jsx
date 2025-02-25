@@ -1,4 +1,4 @@
-import React ,{useEffect} from "react";
+import React, { useEffect } from "react";
 import "./SignUp.css";
 import { Link } from "react-router-dom";
 import { FaRegEye } from "react-icons/fa";
@@ -17,11 +17,13 @@ function SignUp() {
           <form className="signup__form">
             <h1 className="signup__form-title">
               ثبت نام
-              <img
-                src="../src/assets/images/LogoImage/LINORA2.png"
-                alt=""
-                className="signup__form-title-logo"
-              />
+              <Link to={"/"}>
+                <img
+                  src="../src/assets/images/LogoImage/LINORA2.png"
+                  alt=""
+                  className="signup__form-title-logo"
+                />
+              </Link>
             </h1>
             <h2 className="signup__form-subtitle">
               ثبت نام کنید و به محصولات دسترسی داشته باشید .
