@@ -49,7 +49,7 @@ function MobileMenu() {
         <ul className="mobile-menu__list">
           <li className="mobile-menu__list-item">
             <Link
-              to={"/"}
+              to={""}
               className="mobile-menu__list-link"
               onClick={showSideMenuHandler}
             >
@@ -60,7 +60,7 @@ function MobileMenu() {
             className="mobile-menu__list-item"
             onClick={() => setIsShowSearchModal(true)}
           >
-            <Link to={"/"} className="mobile-menu__list-link">
+            <Link to={""} className="mobile-menu__list-link">
               <CiSearch className="mobile-menu__list-icon" />
             </Link>
           </li>
@@ -73,7 +73,7 @@ function MobileMenu() {
             className="mobile-menu__list-item"
             onClick={() => setIsShowBasketModal(true)}
           >
-            <Link to={"/"} className="mobile-menu__list-link">
+            <Link to={""} className="mobile-menu__list-link">
               <CiShoppingBasket className="mobile-menu__list-icon" />
             </Link>
           </li>
@@ -81,7 +81,7 @@ function MobileMenu() {
             className="mobile-menu__list-item"
             onClick={() => setIsShowLoginModal(true)}
           >
-            <Link to={"/"} className="mobile-menu__list-link">
+            <Link to={"/auth/signup"} className="mobile-menu__list-link">
               <CiUser className="mobile-menu__list-icon" />
             </Link>
           </li>

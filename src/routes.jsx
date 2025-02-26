@@ -9,13 +9,14 @@ import CheckOut from "./components/CheckOut/CheckOut";
 import NotFound from "./components/NotFound/NotFound";
 import SignUp from "./pages/SignUp/SignUp";
 import Login from "./pages/Login/Login";
+import Store from './pages/Store/Store'
 
 let routes = [
   { path: "/", element: <Home /> },
   { path: "/user", element: <UserAccount /> },
   { path: "/auth/signup", element: <SignUp /> },
   { path: "/auth/login", element: <Login /> },
-  { path: "/products", element: <Products /> },
+  { path: "/store", element: <Store /> },
   { path: "/products/productinfo", element: <ProductInfo /> },
   { path: "/aboutus", element: <AboutUs /> },
   { path: "/contactus", element: <ContactUs /> },

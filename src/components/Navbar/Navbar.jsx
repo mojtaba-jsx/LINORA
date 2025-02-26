@@ -36,7 +36,7 @@ function Navbar() {
                 </Link>
               </li>
               <li className="navbar-menu__item">
-                <Link className="navbar-menu__link" to={"/products"}>
+                <Link className="navbar-menu__link" to={"/store"}>
                   فروشگاه
                 </Link>
               </li>
