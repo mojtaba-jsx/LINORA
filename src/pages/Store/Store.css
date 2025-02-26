@@ -126,3 +126,78 @@
   font-size: 1.2rem;
   transition: all 120ms ease-in;
 }
+
+/* ! Category */
+
+.store-sidemenu__category {
+  margin-top: 2rem;
+}
+.store-sidemenu__category-title {
+  font-family: "parastoo-bold", Courier, monospace;
+  font-size: 1.2rem;
+}
+.store-sidemenu__category-item:nth-child(2){
+  margin-top: 1rem;
+  
+}
+.store-sidemenu__category-item{
+  margin: 0.5rem;
+  font-weight: bold;
+}
+
+/* !Custom Checkbox */
+
+.store-sidemenu__category-item {
+  list-style: none;
+}
+
+.store-sidemenu__category-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+
+/* مخفی کردن چک‌باکس پیش‌فرض */
+.store-sidemenu__category-item-input {
+  display: none;
+}
+
+/* استایل باکس چک‌باکس */
+.custom-checkbox {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+/* وقتی چک‌باکس فعال شود */
+.store-sidemenu__category-item-input:checked + .custom-checkbox {
+  background: #4caf50;
+  border-color: #4caf50;
+}
+
+/* ایجاد تیک */
+.custom-checkbox::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%) rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* نمایش تیک هنگام انتخاب */
+.store-sidemenu__category-item-input:checked + .custom-checkbox::after {
+  opacity: 1;
+}

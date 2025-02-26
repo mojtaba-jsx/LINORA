@@ -7,7 +7,7 @@ function Store() {
   return (
     <div className="store">
       <Navbar />
-      <MobileMenu/>
+      <MobileMenu />
       <div className="container">
         <div className="store__wrapper">
           <div className="store-products">
@@ -32,6 +32,7 @@ function Store() {
 
           <aside className="store-sidemenu">
             <span className="store-sidemenu__route">خانه / محصولات</span>
+
             <div className="store-sidemenu__filters">
               <div className="store-sidemenu__filters__header">
                 <h1 className="store-sidemenu__filters__header-title">
@@ -41,33 +42,108 @@ function Store() {
                   پاک کردن همه
                 </span>
               </div>
+
               <div className="store-sidemenu__filters__main">
                 <span className="store-sidemenu__filters__main-item">
                   مردانه
-                  <IoClose  className="store-sidemenu__filters__main-item-icon" />
+                  <IoClose className="store-sidemenu__filters__main-item-icon" />
                 </span>
                 <span className="store-sidemenu__filters__main-item">
                   زنانه
-                  <IoClose  className="store-sidemenu__filters__main-item-icon" />
+                  <IoClose className="store-sidemenu__filters__main-item-icon" />
                 </span>
                 <span className="store-sidemenu__filters__main-item">
                   کودکانه
-                  <IoClose  className="store-sidemenu__filters__main-item-icon" />
+                  <IoClose className="store-sidemenu__filters__main-item-icon" />
                 </span>
                 <span className="store-sidemenu__filters__main-item">
                   ساعت
-                  <IoClose  className="store-sidemenu__filters__main-item-icon" />
+                  <IoClose className="store-sidemenu__filters__main-item-icon" />
                 </span>
                 <span className="store-sidemenu__filters__main-item">
                   کیف
-                  <IoClose  className="store-sidemenu__filters__main-item-icon" />
+                  <IoClose className="store-sidemenu__filters__main-item-icon" />
                 </span>
                 <span className="store-sidemenu__filters__main-item">
                   عینک
-                  <IoClose  className="store-sidemenu__filters__main-item-icon" />
+                  <IoClose className="store-sidemenu__filters__main-item-icon" />
                 </span>
               </div>
             </div>
+
+            <ul className="store-sidemenu__category">
+              <h2 className="store-sidemenu__category-title">دسته بندی</h2>
+              <li className="store-sidemenu__category-item">
+                <label className="store-sidemenu__category-label">
+                  <input
+                    type="checkbox"
+                    className="store-sidemenu__category-item-input"
+                  />
+                  <span className="custom-checkbox"></span>
+                  مردانه
+                </label>
+              </li>
+              <li className="store-sidemenu__category-item">
+                <label className="store-sidemenu__category-label">
+                  <input
+                    type="checkbox"
+                    className="store-sidemenu__category-item-input"
+                  />
+                  <span className="custom-checkbox"></span>
+                  زنانه
+                </label>
+              </li>
+              <li className="store-sidemenu__category-item">
+                <label className="store-sidemenu__category-label">
+                  <input
+                    type="checkbox"
+                    className="store-sidemenu__category-item-input"
+                  />
+                  <span className="custom-checkbox"></span>
+                  ساعت
+                </label>
+              </li>
+              <li className="store-sidemenu__category-item">
+                <label className="store-sidemenu__category-label">
+                  <input
+                    type="checkbox"
+                    className="store-sidemenu__category-item-input"
+                  />
+                  <span className="custom-checkbox"></span>
+                  کودکان
+                </label>
+              </li>
+              <li className="store-sidemenu__category-item">
+                <label className="store-sidemenu__category-label">
+                  <input
+                    type="checkbox"
+                    className="store-sidemenu__category-item-input"
+                  />
+                  <span className="custom-checkbox"></span>
+                  ورزشی
+                </label>
+              </li>
+              <li className="store-sidemenu__category-item">
+                <label className="store-sidemenu__category-label">
+                  <input
+                    type="checkbox"
+                    className="store-sidemenu__category-item-input"
+                  />
+                  <span className="custom-checkbox"></span>
+                  کفش
+                </label>
+              </li>
+              <li className="store-sidemenu__category-item">
+                <label className="store-sidemenu__category-label">
+                  <input
+                    type="checkbox"
+                    className="store-sidemenu__category-item-input"
+                  />
+                  <span className="custom-checkbox"></span>
+                  عینک
+                </label>
+              </li>
+            </ul>
           </aside>
         </div>
       </div>
