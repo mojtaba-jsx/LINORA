@@ -2,12 +2,19 @@ import React from "react";
 import "./Store.css";
 import { IoClose } from "react-icons/io5";
 import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
+import Basket from "../../components/Basket/Basket";
 import MobileMenu from "../../components/MobileMenu/MobileMenu";
+import Search from "../../components/Search/Search";
+import StoreProduct from "../../components/StoreProduct/StoreProduct";
 function Store() {
   return (
     <div className="store">
       <Navbar />
       <MobileMenu />
+      <Basket/>
+      <MobileMenu/>
+      <Search/>
       <div className="container">
         <div className="store__wrapper">
           <div className="store-products">
@@ -27,7 +34,19 @@ function Store() {
               </div>
             </div>
 
-            <div className="store-products__main">{/* ! Store Products */}</div>
+            <div className="store-products__main">
+              <div className="store-products__main__wrapper">
+              <StoreProduct/>
+              <StoreProduct/>
+              <StoreProduct/>
+              <StoreProduct/>
+              <StoreProduct/>
+              <StoreProduct/>
+              <StoreProduct/>
+              <StoreProduct/>
+              </div>
+                <button className="store-products__main-btn">بارگذاری بیشتر</button>
+            </div>
           </div>
 
           <aside className="store-sidemenu">
@@ -302,6 +321,7 @@ function Store() {
           </aside>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

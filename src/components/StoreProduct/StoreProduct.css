@@ -1,0 +1,48 @@
+.store-product {
+  width: 14rem;
+  height: 26rem;
+  padding: 10px;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: all 120ms ease-in;
+}
+.store-product:hover {
+    transform: scale(1.04);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.store-product__image {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.store-product__info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.store-product__info-title {
+  font-family: "parastoo-bold", Courier, monospace;
+  margin-top: 0.5rem;
+}
+
+.store-product__info-caption {
+  text-align: justify;
+  line-height: 1.4rem;
+}
+
+.store-product__info__prices {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.store-product__info__prices-orginal {
+  text-decoration: line-through;
+  font-weight: bold;
+}
+
+.store-product__info__prices-discount {
+}
