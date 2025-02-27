@@ -3,7 +3,7 @@
 
 .store__wrapper {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   flex-direction: row-reverse;
   column-gap: 1rem;
   margin-top: 2rem;
@@ -15,7 +15,7 @@
   /* background-color: red; */
   padding: 10px;
   border-radius: 1rem;
-  height: 50rem;
+  /* height: 50rem; */
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
@@ -58,7 +58,8 @@
   border-radius: 1rem;
   /* background-color: blue; */
   padding: 10px;
-  height: 50rem;
+  /* height: 50rem; */
+  overflow-y: scroll;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
@@ -127,31 +128,44 @@
   transition: all 120ms ease-in;
 }
 
-/* ! Category */
+/* ! Category And Price And Colors */
 
-.store-sidemenu__category {
+.store-sidemenu__category,
+.store-sidemenu__price,
+.store-sidemenu__colors {
   margin-top: 2rem;
+  border-bottom: 1px solid black;
 }
-.store-sidemenu__category-title {
+.store-sidemenu__category-title,
+.store-sidemenu__price-title,
+.store-sidemenu__colors-title {
   font-family: "parastoo-bold", Courier, monospace;
   font-size: 1.2rem;
 }
-.store-sidemenu__category-item:nth-child(2){
+.store-sidemenu__category-item:nth-child(2),
+.store-sidemenu__price-item:nth-child(2),
+.store-sidemenu__colors-item:nth-child(2) {
   margin-top: 1rem;
-  
 }
-.store-sidemenu__category-item{
+
+.store-sidemenu__category-item,
+.store-sidemenu__price-item,
+.store-sidemenu__colors-item {
   margin: 0.5rem;
   font-weight: bold;
 }
 
 /* !Custom Checkbox */
 
-.store-sidemenu__category-item {
+.store-sidemenu__category-item,
+.store-sidemenu__price-item,
+.store-sidemenu__colors-item {
   list-style: none;
 }
 
-.store-sidemenu__category-label {
+.store-sidemenu__category-label,
+.store-sidemenu__price-label,
+.store-sidemenu__colors-label {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -161,7 +175,9 @@
 }
 
 /* مخفی کردن چک‌باکس پیش‌فرض */
-.store-sidemenu__category-item-input {
+.store-sidemenu__category-item-input,
+.store-sidemenu__price-item-input,
+.store-sidemenu__colors-item-input {
   display: none;
 }
 
@@ -177,6 +193,14 @@
 
 /* وقتی چک‌باکس فعال شود */
 .store-sidemenu__category-item-input:checked + .custom-checkbox {
+  background: #4caf50;
+  border-color: #4caf50;
+}
+.store-sidemenu__price-item-input:checked + .custom-checkbox {
+  background: #4caf50;
+  border-color: #4caf50;
+}
+.store-sidemenu__colors-item-input:checked + .custom-checkbox {
   background: #4caf50;
   border-color: #4caf50;
 }
@@ -200,4 +224,45 @@
 /* نمایش تیک هنگام انتخاب */
 .store-sidemenu__category-item-input:checked + .custom-checkbox::after {
   opacity: 1;
+}
+.store-sidemenu__price-item-input:checked + .custom-checkbox::after {
+  opacity: 1;
+}
+.store-sidemenu__colors-item-input:checked + .custom-checkbox::after {
+  opacity: 1;
+}
+
+.store-sidemenu__colors-item-black,
+.store-sidemenu__colors-item-blue,
+.store-sidemenu__colors-item-green,
+.store-sidemenu__colors-item-brown,
+.store-sidemenu__colors-item-white,
+.store-sidemenu__colors-item-red,
+.store-sidemenu__colors-item-yellow {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.store-sidemenu__colors-item-black {
+  background-color: var(--black);
+}
+
+.store-sidemenu__colors-item-blue {
+  background-color: var(--bluish);
+}
+.store-sidemenu__colors-item-green {
+  background-color: var(--green);
+}
+.store-sidemenu__colors-item-brown {
+  background-color: var(--ironStone);
+}
+.store-sidemenu__colors-item-red {
+  background-color: var(--red);
+}
+.store-sidemenu__colors-item-yellow {
+  background-color: var(--lightMustard);
 }

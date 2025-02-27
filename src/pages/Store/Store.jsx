@@ -144,6 +144,161 @@ function Store() {
                 </label>
               </li>
             </ul>
+
+            <ul className="store-sidemenu__price">
+              <h2 className="store-sidemenu__price-title">قیمت </h2>
+              <li className="store-sidemenu__price-item">
+                <label className="store-sidemenu__price-label">
+                  <input
+                    type="checkbox"
+                    className="store-sidemenu__price-item-input"
+                  />
+                  <span className="custom-checkbox"></span>
+                  کمتر از 100/000 تومان
+                </label>
+              </li>
+              <li className="store-sidemenu__price-item">
+                <label className="store-sidemenu__price-label">
+                  <input
+                    type="checkbox"
+                    className="store-sidemenu__price-item-input"
+                  />
+                  <span className="custom-checkbox"></span>
+                  100/000 تا 400/000
+                </label>
+              </li>
+              <li className="store-sidemenu__price-item">
+                <label className="store-sidemenu__price-label">
+                  <input
+                    type="checkbox"
+                    className="store-sidemenu__price-item-input"
+                  />
+                  <span className="custom-checkbox"></span>
+                  400/000 تا 800/000 تومان
+                </label>
+              </li>
+              <li className="store-sidemenu__price-item">
+                <label className="store-sidemenu__price-label">
+                  <input
+                    type="checkbox"
+                    className="store-sidemenu__price-item-input"
+                  />
+                  <span className="custom-checkbox"></span>
+                  800/000 تا 1/000/000 تومان
+                </label>
+              </li>
+              <li className="store-sidemenu__price-item">
+                <label className="store-sidemenu__price-label">
+                  <input
+                    type="checkbox"
+                    className="store-sidemenu__price-item-input"
+                  />
+                  <span className="custom-checkbox"></span>
+                  1/000/000 تا 1/400/000 تومان
+                </label>
+              </li>
+              <li className="store-sidemenu__price-item">
+                <label className="store-sidemenu__price-label">
+                  <input
+                    type="checkbox"
+                    className="store-sidemenu__price-item-input"
+                  />
+                  <span className="custom-checkbox"></span>
+                  1/400/000 تا 2/000/000 تومان
+                </label>
+              </li>
+              <li className="store-sidemenu__price-item">
+                <label className="store-sidemenu__price-label">
+                  <input
+                    type="checkbox"
+                    className="store-sidemenu__price-item-input"
+                  />
+                  <span className="custom-checkbox"></span>
+                  بیشتر از 2/000/000 تومان
+                </label>
+              </li>
+            </ul>
+
+            <ul className="store-sidemenu__colors">
+              <h2 className="store-sidemenu__colors-title">رنگ ها </h2>
+              <li className="store-sidemenu__colors-item">
+                <label className="store-sidemenu__colors-label">
+                  <input
+                    type="checkbox"
+                    className="store-sidemenu__colors-item-input"
+                  />
+                  <span className="custom-checkbox"></span>
+                  <span className="store-sidemenu__colors-item-black"></span>
+                  مشکی
+                </label>
+              </li>
+              <li className="store-sidemenu__colors-item">
+                <label className="store-sidemenu__colors-label">
+                  <input
+                    type="checkbox"
+                    className="store-sidemenu__colors-item-input"
+                  />
+                  <span className="custom-checkbox"></span>
+                  <span className="store-sidemenu__colors-item-blue"></span>
+                  آبی
+                </label>
+              </li>
+              <li className="store-sidemenu__colors-item">
+                <label className="store-sidemenu__colors-label">
+                  <input
+                    type="checkbox"
+                    className="store-sidemenu__colors-item-input"
+                  />
+                  <span className="custom-checkbox"></span>
+                  <span className="store-sidemenu__colors-item-green"></span>
+                  سبز
+                </label>
+              </li>
+              <li className="store-sidemenu__colors-item">
+                <label className="store-sidemenu__colors-label">
+                  <input
+                    type="checkbox"
+                    className="store-sidemenu__colors-item-input"
+                  />
+                  <span className="custom-checkbox"></span>
+                  <span className="store-sidemenu__colors-item-brown"></span>
+                  قهوه ای
+                </label>
+              </li>
+              <li className="store-sidemenu__colors-item">
+                <label className="store-sidemenu__colors-label">
+                  <input
+                    type="checkbox"
+                    className="store-sidemenu__colors-item-input"
+                  />
+                  <span className="custom-checkbox"></span>
+                  <span className="store-sidemenu__colors-item-white"></span>
+                  سفید
+                </label>
+              </li>
+              <li className="store-sidemenu__colors-item">
+                <label className="store-sidemenu__colors-label">
+                  <input
+                    type="checkbox"
+                    className="store-sidemenu__colors-item-input"
+                  />
+                  <span className="custom-checkbox"></span>
+                  <span className="store-sidemenu__colors-item-red"></span>
+                  قرمز
+                </label>
+              </li>
+              <li className="store-sidemenu__colors-item">
+                <label className="store-sidemenu__colors-label">
+                  <input
+                    type="checkbox"
+                    className="store-sidemenu__colors-item-input"
+                  />
+                  <span className="custom-checkbox"></span>
+                  <span className="store-sidemenu__colors-item-yellow"></span>
+                  زرد
+                </label>
+              </li>
+            </ul>
           </aside>
         </div>
       </div>

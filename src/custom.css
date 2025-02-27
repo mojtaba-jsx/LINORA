@@ -171,6 +171,7 @@ body {
   --snowDrift: #f9f9f9;
   --greenWhite: #ece7e3;
   --lightMustard: #ffcf50;
+  --ironStone: #854836;
 }
 
 /* ! Scrollbar Styles */
@@ -625,10 +626,10 @@ body {
   .login__form-btn {
     width: 14rem;
   }
-  .login__form-title{
+  .login__form-title {
     font-size: 2.4rem;
   }
-  .login__form-title-logo{
+  .login__form-title-logo {
     width: 4rem;
     height: 2rem;
   }
