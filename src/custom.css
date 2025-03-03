@@ -360,6 +360,20 @@ body {
   .login__right {
     width: 100%;
   }
+
+  /* * Store Page */
+  .store-products__header-filter{
+    display: flex;
+  }
+  .store-products__header-title{
+    display: none;
+  }
+  .store-sidemenu{
+    display: none;
+  }
+  .store-products{
+    width: 100%;
+  }
 }
 @media screen and (max-width: 992px) {
   /* * Fashion Component */
@@ -480,6 +494,10 @@ body {
   }
   .inbox-tips__left-input {
     width: 12rem;
+  }
+  /* * Store Page */
+  .store-products__header__boxes-number{
+    display: none;
   }
 }
 @media screen and (max-width: 576px) {

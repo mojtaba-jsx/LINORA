@@ -17,7 +17,7 @@ function AppContent() {
     setLoading(true);
     const timer = setTimeout(() => {
       setLoading(false);
-      setIsPageLoaded(true);  // پس از پایان لود، صفحه را نمایش می‌دهیم
+      setIsPageLoaded(true); // پس از پایان لود، صفحه را نمایش می‌دهیم
     }, 1200); // زمان لود کردن (۲ ثانیه)
 
     return () => clearTimeout(timer);
@@ -27,6 +27,8 @@ function AppContent() {
   const [isShowLoginModal, setIsShowLoginModal] = useState(false);
   const [isShowSignUpModal, setIsShowSignUpModal] = useState(false);
   const [isShowBasketModal, setIsShowBasketModal] = useState(false);
+  const [isShowStoreCategoryModal, setIsShowStoreCategoryModal] =
+    useState(false);
 
   return (
     <appContext.Provider
@@ -39,6 +41,8 @@ function AppContent() {
         setIsShowSignUpModal,
         isShowBasketModal,
         setIsShowBasketModal,
+        isShowStoreCategoryModal,
+        setIsShowStoreCategoryModal,
       }}
     >
       {loading && <Loader />} {/* نمایش Loader */}

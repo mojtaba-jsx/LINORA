@@ -1,25 +1,38 @@
-import React from "react";
+import React ,{useContext} from "react";
 import "./Store.css";
 import { IoClose } from "react-icons/io5";
+import { LuSettings2 } from "react-icons/lu";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import Basket from "../../components/Basket/Basket";
 import MobileMenu from "../../components/MobileMenu/MobileMenu";
 import Search from "../../components/Search/Search";
 import StoreProduct from "../../components/StoreProduct/StoreProduct";
+import StoreCategoryModal from "../../components/StoreCategoryModal/StoreCategoryModal";
+import appContext from "../../Contexts/AppContext";
+
 function Store() {
+  const { isShowStoreCategoryModal, setIsShowStoreCategoryModal } =
+    useContext(appContext);
+
   return (
     <div className="store">
       <Navbar />
       <MobileMenu />
-      <Basket/>
-      <MobileMenu/>
-      <Search/>
+      <Basket />
+      <MobileMenu />
+      <Search />
       <div className="container">
         <div className="store__wrapper">
           <div className="store-products">
             <div className="store-products__header">
               <h1 className="store-products__header-title">لباس راحتی</h1>
+              <button className="store-products__header-filter" onClick={()=>{
+                setIsShowStoreCategoryModal(true)
+              }}>
+                فیلتر ها
+                <LuSettings2 className="store-products__header-filter-icon" />
+              </button>
               <div className="store-products__header__boxes">
                 <span className="store-products__header__boxes-number">
                   100 مورد
@@ -36,16 +49,18 @@ function Store() {
 
             <div className="store-products__main">
               <div className="store-products__main__wrapper">
-              <StoreProduct/>
-              <StoreProduct/>
-              <StoreProduct/>
-              <StoreProduct/>
-              <StoreProduct/>
-              <StoreProduct/>
-              <StoreProduct/>
-              <StoreProduct/>
+                <StoreProduct />
+                <StoreProduct />
+                <StoreProduct />
+                <StoreProduct />
+                <StoreProduct />
+                <StoreProduct />
+                <StoreProduct />
+                <StoreProduct />
               </div>
-                <button className="store-products__main-btn">بارگذاری بیشتر</button>
+              <button className="store-products__main-btn">
+                بارگذاری بیشتر
+              </button>
             </div>
           </div>
 
@@ -321,7 +336,8 @@ function Store() {
           </aside>
         </div>
       </div>
-      <Footer/>
+      <StoreCategoryModal />
+      <Footer />
     </div>
   );
 }

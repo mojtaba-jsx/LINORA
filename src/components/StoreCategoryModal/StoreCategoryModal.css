@@ -1,0 +1,280 @@
+.store-category-modal {
+  width: 20rem;
+  position: fixed;
+  inset: 0;
+  right: -30rem;
+  opacity: 0;
+  visibility: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 10px;
+  overflow-y: scroll;
+  transition: all 120ms ease-in;
+}
+
+.store-category-modal.active {
+  right: 0;
+  opacity: 1;
+  visibility: visible;
+}
+.store-category-modal__wrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: white;
+  border-radius: 10px;
+  z-index: 1001;
+  padding-bottom: 1.2rem;
+}
+
+.store-category-modal {
+}
+
+.store-category-modal__header {
+  position: relative;
+  justify-content: center;
+  padding-top: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.store-category-modal__header-title {
+  font-family: "parastoo-bold", Courier, monospace;
+  display: block;
+  font-size: 1.2rem;
+}
+
+.store-category-modal__header-icon {
+  font-size: 40px;
+  color: var(--red);
+  position: absolute;
+  top: 10px;
+  left: 0;
+  cursor: pointer;
+}
+
+.store-category-modal__route {
+  font-family: "parastoo-bold", Courier, monospace;
+}
+
+.store-category-modal__filters__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  border-bottom: 1px solid var(--black);
+  padding-bottom: 10px;
+}
+
+.store-category-modal__filters__header-title {
+  font-size: 1.4rem;
+  font-family: "parastoo-bold", Courier, monospace;
+}
+
+.store-category-modal__filters__header-clear {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 0.5rem;
+  transition: all 120ms ease-in;
+}
+.store-category-modal__filters__header-clear:hover {
+  background-color: red;
+  color: var(--white);
+  font-family: "parastoo-bold", Courier, monospace;
+}
+.store-category-modal__filters__main {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 1em;
+}
+
+.store-category-modal__filters__main-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--black);
+  width: auto;
+  padding: 5px;
+  height: 2rem;
+  width: 4rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-family: "parastoo-bold", Courier, monospace;
+  transition: all 120ms ease-in;
+}
+.store-category-modal__filters__main-item:hover {
+  transform: scale(1.04);
+}
+.store-category-modal__filters__main-item:hover
+  .store-category-modal__filters__main-item-icon {
+  color: var(--red);
+}
+
+.store-category-modal__filters__main-item-icon {
+  font-size: 1.2rem;
+  transition: all 120ms ease-in;
+}
+
+/* ! Category And Price And Colors */
+
+.store-category-modal__category,
+.store-category-modal__price,
+.store-category-modal__colors {
+  margin-top: 2rem;
+  border-bottom: 1px solid black;
+}
+.store-category-modal__category-title,
+.store-category-modal__price-title,
+.store-category-modal__colors-title {
+  font-family: "parastoo-bold", Courier, monospace;
+  font-size: 1.2rem;
+}
+.store-category-modal__category-item:nth-child(2),
+.store-category-modal__price-item:nth-child(2),
+.store-category-modal__colors-item:nth-child(2) {
+  margin-top: 1rem;
+}
+
+.store-category-modal__category-item,
+.store-category-modal__price-item,
+.store-category-modal__colors-item {
+  margin: 0.5rem;
+  font-weight: bold;
+}
+
+/* !Custom Checkbox */
+
+.store-category-modal__category-item,
+.store-category-modal__price-item,
+.store-category-modal__colors-item {
+  list-style: none;
+}
+
+.store-category-modal__category-label,
+.store-category-modal__price-label,
+.store-category-modal__colors-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+
+/* مخفی کردن چک‌باکس پیش‌فرض */
+.store-category-modal__category-item-input,
+.store-category-modal__price-item-input,
+.store-category-modal__colors-item-input {
+  display: none;
+}
+
+/* استایل باکس چک‌باکس */
+.custom-checkbox {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+/* وقتی چک‌باکس فعال شود */
+.store-category-modal__category-item-input:checked + .custom-checkbox {
+  background: #4caf50;
+  border-color: #4caf50;
+}
+.store-category-modal__price-item-input:checked + .custom-checkbox {
+  background: #4caf50;
+  border-color: #4caf50;
+}
+.store-category-modal__colors-item-input:checked + .custom-checkbox {
+  background: #4caf50;
+  border-color: #4caf50;
+}
+
+/* ایجاد تیک */
+.custom-checkbox::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%) rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* نمایش تیک هنگام انتخاب */
+.store-category-modal__category-item-input:checked + .custom-checkbox::after {
+  opacity: 1;
+}
+.store-category-modal__price-item-input:checked + .custom-checkbox::after {
+  opacity: 1;
+}
+.store-category-modal__colors-item-input:checked + .custom-checkbox::after {
+  opacity: 1;
+}
+
+.store-category-modal__colors-item-black,
+.store-category-modal__colors-item-blue,
+.store-category-modal__colors-item-green,
+.store-category-modal__colors-item-brown,
+.store-category-modal__colors-item-white,
+.store-category-modal__colors-item-red,
+.store-category-modal__colors-item-yellow {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.store-category-modal__colors-item-black {
+  background-color: var(--black);
+}
+
+.store-category-modal__colors-item-blue {
+  background-color: var(--bluish);
+}
+.store-category-modal__colors-item-green {
+  background-color: var(--green);
+}
+.store-category-modal__colors-item-brown {
+  background-color: var(--ironStone);
+}
+.store-category-modal__colors-item-red {
+  background-color: var(--red);
+}
+.store-category-modal__colors-item-yellow {
+  background-color: var(--lightMustard);
+}
+
+.store-category-modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.store-category-modal__numbers {
+  background-color: var(--black);
+  display: block;
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
