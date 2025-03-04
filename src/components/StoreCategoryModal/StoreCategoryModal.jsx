@@ -12,9 +12,6 @@ function StoreCategoryModal() {
       className={`store-category-modal ${
         isShowStoreCategoryModal ? "active" : ""
       }`}
-      onClick={() => {
-        setIsShowStoreCategoryModal(false);
-      }}
     >
       <div className="store-category-modal__overlay"></div>
       <div className="store-category-modal__wrapper">
