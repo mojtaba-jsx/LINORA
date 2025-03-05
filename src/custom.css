@@ -609,6 +609,11 @@ body {
   .login__form-subtitle {
     text-align: center;
   }
+
+  /* * Blog Page */
+  .blog__title{
+    font-size: 2rem;
+  }
 }
 @media screen and (max-width: 480px) {
   /* * Basket Component */

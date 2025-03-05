@@ -1,0 +1,36 @@
+
+
+
+.blog__title{
+    font-size: 4rem;
+    font-family: 'sogand', Courier, monospace;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.blog__subtitle{
+    text-align: center;
+    margin-top: 1rem;
+    font-family: 'parastoo-bold', Courier, monospace;
+}   
+
+.blog__posts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.blog__btn{
+    margin: 2rem auto;
+    display: block;
+    padding: 1rem;
+    width: 10rem;
+    border-radius: 1rem;
+    background-color: var(--green);
+    color: var(--white);
+    font-family: 'parastoo-bold', Courier, monospace;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
