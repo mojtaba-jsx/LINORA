@@ -1,5 +1,5 @@
 .blog-post {
-  width: 20rem;
+  width: 16rem;
   padding: 1rem;
   border-radius: 1rem;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
@@ -51,14 +51,12 @@
   justify-content: space-between;
   font-family: "parastoo-bold", Courier, monospace;
   cursor: pointer;
-  width: 100%;
-
   background: none;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   transition: all 120ms ease-in;
 }
 
-.blog-post__btn:hover{
+.blog-post__btn:hover {
   background-color: var(--green);
   color: var(--white);
 }

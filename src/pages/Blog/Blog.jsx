@@ -26,11 +26,13 @@ function Blog() {
             <BlogPost/>
             <BlogPost/>
             <BlogPost/>
+            <BlogPost/>
+            <BlogPost/>
           </div>
           <button className="blog__btn">نمایش بیشتر</button>
         </div>
       </div>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 }

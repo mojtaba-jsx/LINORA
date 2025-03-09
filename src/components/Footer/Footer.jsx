@@ -17,7 +17,7 @@ function Footer() {
           <ul className="footer__col1">
             <li className="footer__col1-item">
               <img
-                src="./src/assets/images/LogoImage/LINORA2.png"
+                src="../src/assets/images/LogoImage/LINORA2.png"
                 alt=""
                 className="footer__col1-logo"
               />
@@ -112,27 +112,27 @@ function Footer() {
           <ul className="footer__col5">
             <li className="footer__col5-item">
               <img
-                src="./src/assets/images/footer-logos/mastercard.png"
+                src="../src/assets/images/footer-logos/mastercard.png"
                 alt=""
                 className="footer__col5-image"
               />
               <img
-                src="./src/assets/images/footer-logos/paypal.png"
+                src="../src/assets/images/footer-logos/paypal.png"
                 alt=""
                 className="footer__col5-image"
               />
               <img
-                src="./src/assets/images/footer-logos/visa.png"
+                src="../src/assets/images/footer-logos/visa.png"
                 alt=""
                 className="footer__col5-image"
               />
               <img
-                src="./src/assets/images/footer-logos/zarrinpal.png"
+                src="../src/assets/images/footer-logos/zarrinpal.png"
                 alt=""
                 className="footer__col5-image"
               />
               <img
-                src="./src/assets/images/footer-logos/enamd.png"
+                src="../src/assets/images/footer-logos/enamd.png"
                 alt=""
                 className="footer__col5-image"
               />
@@ -146,8 +146,8 @@ function Footer() {
             <FaHeart className="sub-footer__info-icon" />
             توسط
             <Link className="sub-footer__info-link" to={"/"}>
-            Mojtaba.JSX
-            <FaGithub className="sub-footer__text-logo" />
+              Mojtaba.JSX
+              <FaGithub className="sub-footer__text-logo" />
             </Link>
           </span>
         </div>

@@ -21,7 +21,7 @@ function Navbar() {
           <div className="navbar-right">
             <Link to={"/"}>
               <img
-                src="./src/assets/images/LogoImage/LINORA2.png"
+                src="../src/assets/images/LogoImage/LINORA2.png"
                 alt=""
                 className="navbar-right__logo"
               />
@@ -42,7 +42,7 @@ function Navbar() {
                 </Link>
               </li>
               <li className="navbar-menu__item category-btn">
-                <Link className="navbar-menu__link" to={"/"}>
+                <Link className="navbar-menu__link" to={""}>
                   دسته بندی
                   <GoChevronDown className="navbar-menu__icon navbar-menu__icon-category" />
                 </Link>
@@ -50,7 +50,7 @@ function Navbar() {
                   <div className="navbar-menu__category__images">
                     <div className="navbar-menu__category__images__top">
                       <img
-                        src="./src/assets/images/megamenu/megamenu1.png"
+                        src="../src/assets/images/megamenu/megamenu1.png"
                         alt=""
                         className="navbar-menu__category__images__top-image"
                       />
@@ -74,7 +74,7 @@ function Navbar() {
                     <div className="navbar-menu__category__images__bottom">
                       <div className="navbar-menu__category__images__bottom-left">
                         <img
-                          src="./src/assets/images/megamenu/megamenu2.png"
+                          src="../src/assets/images/megamenu/megamenu2.png"
                           alt=""
                           className="navbar-menu__category__images__bottom-left-image"
                         />
@@ -94,7 +94,7 @@ function Navbar() {
 
                       <div className="navbar-menu__category__images__bottom-right">
                         <img
-                          src="./src/assets/images/megamenu/megamenu3.png"
+                          src="../src/assets/images/megamenu/megamenu3.png"
                           alt=""
                           className="navbar-menu__category__images__bottom-right-image"
                         />
@@ -128,7 +128,7 @@ function Navbar() {
                           لباس مردانه
                           </span>
                           <img
-                            src="./src/assets/images/categorySlider/men.png"
+                            src="../src/assets/images/categorySlider/men.png"
                             alt=""
                             className="navbar-menu__category__items__list__item-link-img"
                           />
@@ -143,7 +143,7 @@ function Navbar() {
                           لباس زنانه
                           </span>
                           <img
-                            src="./src/assets/images/categorySlider/woman.png"
+                            src="../src/assets/images/categorySlider/woman.png"
                             alt=""
                             className="navbar-menu__category__items__list__item-link-img"
                           />
@@ -158,7 +158,7 @@ function Navbar() {
                           لباس بچگانه
                           </span>
                           <img
-                            src="./src/assets/images/categorySlider/children.png"
+                            src="../src/assets/images/categorySlider/children.png"
                             alt=""
                             className="navbar-menu__category__items__list__item-link-img"
                           />
@@ -173,7 +173,7 @@ function Navbar() {
                           لباس ورزشی
                           </span>
                           <img
-                            src="./src/assets/images/categorySlider/sport.png"
+                            src="../src/assets/images/categorySlider/sport.png"
                             alt=""
                             className="navbar-menu__category__items__list__item-link-img"
                           />
@@ -188,7 +188,7 @@ function Navbar() {
                            عینک
                           </span>
                           <img
-                            src="./src/assets/images/categorySlider/eyeglasses.png"
+                            src="../src/assets/images/categorySlider/eyeglasses.png"
                             alt=""
                             className="navbar-menu__category__items__list__item-link-img"
                           />
@@ -203,7 +203,7 @@ function Navbar() {
                            کفش
                           </span>
                           <img
-                            src="./src/assets/images/categorySlider/shoes.png"
+                            src="../src/assets/images/categorySlider/shoes.png"
                             alt=""
                             className="navbar-menu__category__items__list__item-link-img"
                           />

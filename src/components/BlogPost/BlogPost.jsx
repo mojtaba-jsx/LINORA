@@ -1,5 +1,6 @@
 import React from "react";
 import "./BlogPost.css";
+import { Link } from "react-router-dom";
 import { IoIosArrowBack } from "react-icons/io";
 function BlogPost() {
   return (
@@ -24,10 +25,10 @@ function BlogPost() {
       <p className="blog-post__text">
         امروزه مدل های زیادی در سراسر جهان مشغول به مدلینگ می باشند ...
       </p>
-      <button className="blog-post__btn">
+      <Link to={'/blog/info'} className="blog-post__btn">
         مطالعه بیشتر
         <IoIosArrowBack className="blog-post__btn-icon" />
-      </button>
+      </Link>
     </div>
   );
 }
