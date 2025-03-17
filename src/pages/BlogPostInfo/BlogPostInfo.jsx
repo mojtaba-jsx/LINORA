@@ -3,6 +3,8 @@ import "./BlogPostInfo.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import { TfiTimer } from "react-icons/tfi";
+import { FaPencilAlt } from "react-icons/fa";
+import { FaRegUser } from "react-icons/fa";
 function BlogPostInfo() {
   return (
     <div className="blog-post-info">
@@ -62,10 +64,92 @@ function BlogPostInfo() {
             رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات
             پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
           </p>
+          {/* Comments Section */}
+          <div className="blog-post-info__comments">
+            <h1 className="blog-post-info__comments-title">
+              <FaPencilAlt className="blog-post-info__comments-title-icon" />
+              ثبت نظر
+            </h1>
+            <div className="blog-post-info__comments__submit">
+              <textarea placeholder="نظر خود را بنویسید ..." className="blog-post-info__comments__submit-input"></textarea>
+              <button
+                type="submit"
+                className="blog-post-info__comments__submit-btn"
+              >
+                ثبت نظر
+              </button>
+            </div>
+            <div className="blog-post-info__comments__boxes">
+              <div className="blog-post-info__comments__box">
+                <span className="blog-post-info__comments__box-title">
+                  <FaRegUser className="blog-post-info__comments__box-title-icon" />
+                  علی کریمی
+                </span>
+                <p className="blog-post-info__comments__box-body">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                  تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                  کاربردی می باشد
+                </p>
+              </div>
+              <div className="blog-post-info__comments__box">
+                <span className="blog-post-info__comments__box-title">
+                  <FaRegUser className="blog-post-info__comments__box-title-icon" />
+                  علی کریمی
+                </span>
+                <p className="blog-post-info__comments__box-body">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                  تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                  کاربردی می باشد
+                </p>
+              </div>
+              <div className="blog-post-info__comments__box">
+                <span className="blog-post-info__comments__box-title">
+                  <FaRegUser className="blog-post-info__comments__box-title-icon" />
+                  علی کریمی
+                </span>
+                <p className="blog-post-info__comments__box-body">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                  تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                  کاربردی می باشد
+                </p>
+              </div>
+              <div className="blog-post-info__comments__box">
+                <span className="blog-post-info__comments__box-title">
+                  <FaRegUser className="blog-post-info__comments__box-title-icon" />
+                  علی کریمی
+                </span>
+                <p className="blog-post-info__comments__box-body">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                  تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                  کاربردی می باشد
+                </p>
+              </div>
+              <div className="blog-post-info__comments__box">
+                <span className="blog-post-info__comments__box-title">
+                  <FaRegUser className="blog-post-info__comments__box-title-icon" />
+                  علی کریمی
+                </span>
+                <p className="blog-post-info__comments__box-body">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                  تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                  کاربردی می باشد
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <Footer />
-      
     </div>
   );
 }

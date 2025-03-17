@@ -394,6 +394,15 @@ body {
   .blog-post-info__readtime {
     justify-content: center;
   }
+  /* *Blog Info Page Comments */
+  .blog-post-info__comments__submit-input{
+    width: 80%;
+    margin: 1rem auto;
+  }
+  .blog-post-info__comments__box{
+    width: 80%;
+    margin: 1rem auto;
+  }
 }
 @media screen and (max-width: 992px) {
   /* * Fashion Component */
