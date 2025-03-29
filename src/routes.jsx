@@ -1,6 +1,6 @@
 import Home from "./pages/Home/Home";
 import UserAccount from "./components/UserAccount/UserAccount";
-import ProductInfo from "./components/ProductInfo/ProductInfo";
+import ProductInfo from "./pages/ProductInfo/ProductInfo";
 import AboutUs from "./components/AboutUs/AboutUs";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Basket from "./components/Basket/Basket";
