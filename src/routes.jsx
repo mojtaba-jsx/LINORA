@@ -17,7 +17,7 @@ let routes = [
   { path: "/user", element: <UserAccount /> },
   { path: "/auth/signup", element: <SignUp /> },
   { path: "/auth/login", element: <Login /> },
-  { path: "/store", element: <Store /> },
+  { path: "/products", element: <Store /> },
   { path: "/blog", element: <Blog /> },
   { path: "/blog/info", element: <BlogPostInfo /> },
   { path: "/products/productinfo", element: <ProductInfo /> },

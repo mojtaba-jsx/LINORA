@@ -1,2 +1,41 @@
 
 
+.product-info__wrapper{
+    display: flex;
+    margin-top: 4rem;
+    
+}
+
+.productinfo-slider{
+    width: 10rem;
+    
+}
+
+.productinfo-slider__img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+.productinfo-slider-main{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 0.5rem;
+}
+
+.productinfo-slider-gallery {
+    width: 20rem;
+    height: 20rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+
+}
+
+.productinfo-slider-gallery-img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+}

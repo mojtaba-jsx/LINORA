@@ -29,28 +29,28 @@ function ProductInfo() {
               }}
               loop={true}
               spaceBetween={10}
-              navigation={true}
+              // navigation={true}
               thumbs={{ swiper: thumbsSwiper }}
               modules={[FreeMode, Navigation, Thumbs]}
-              className="mySwiper2"
+              className="productinfo-slider-main"
             >
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                <img className="productinfo-slider__img" src="https://swiperjs.com/demos/images/nature-1.jpg" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                <img className="productinfo-slider__img" src="https://swiperjs.com/demos/images/nature-2.jpg" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                <img className="productinfo-slider__img" src="https://swiperjs.com/demos/images/nature-3.jpg" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                <img className="productinfo-slider__img" src="https://swiperjs.com/demos/images/nature-4.jpg" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                <img className="productinfo-slider__img" src="https://swiperjs.com/demos/images/nature-5.jpg" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                <img className="productinfo-slider__img" src="https://swiperjs.com/demos/images/nature-6.jpg" />
               </SwiperSlide>
               <SwiperSlide>
                 <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
@@ -73,37 +73,37 @@ function ProductInfo() {
               freeMode={true}
               watchSlidesProgress={true}
               modules={[FreeMode, Navigation, Thumbs]}
-              className="mySwiper"
+              className="productinfo-slider-gallery"
             >
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                <img className="productinfo-slider-gallery-img" src="https://swiperjs.com/demos/images/nature-1.jpg" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                <img className="productinfo-slider-gallery-img" src="https://swiperjs.com/demos/images/nature-2.jpg" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                <img className="productinfo-slider-gallery-img" src="https://swiperjs.com/demos/images/nature-3.jpg" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                <img className="productinfo-slider-gallery-img" src="https://swiperjs.com/demos/images/nature-4.jpg" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                <img className="productinfo-slider-gallery-img" src="https://swiperjs.com/demos/images/nature-5.jpg" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                <img className="productinfo-slider-gallery-img" src="https://swiperjs.com/demos/images/nature-6.jpg" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                <img className="productinfo-slider-gallery-img" src="https://swiperjs.com/demos/images/nature-7.jpg" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                <img className="productinfo-slider-gallery-img" src="https://swiperjs.com/demos/images/nature-8.jpg" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                <img className="productinfo-slider-gallery-img" src="https://swiperjs.com/demos/images/nature-9.jpg" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                <img className="productinfo-slider-gallery-img" src="https://swiperjs.com/demos/images/nature-10.jpg" />
               </SwiperSlide>
             </Swiper>
           </div>
