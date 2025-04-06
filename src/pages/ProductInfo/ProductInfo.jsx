@@ -22,7 +22,7 @@ function ProductInfo() {
       <div className="container">
         <div className="product-info__wrapper">
           <div className="product-info__slider">
-            <Swiper
+            <Swiper 
               style={{
                 "--swiper-navigation-color": "#fff",
                 "--swiper-pagination-color": "#fff",
@@ -124,8 +124,8 @@ function ProductInfo() {
               </div>
               <div className="product-info__infos-prices__score">
                 <span className="product-info__infos-prices__score-star">
-                  <FaStar className="product-info__infos-prices__score-star-icon" />
                   4.5
+                  <FaStar className="product-info__infos-prices__score-star-icon" />
                 </span>
                 <span className="product-info__infos-prices__score-sold">
                   120 فروخته شده
@@ -135,7 +135,7 @@ function ProductInfo() {
             {/* ! /////// */}
             <div className="product-info__infos__decsription">
               <h1 className="product-info__infos__decsription-title">
-                توضیحات
+                توضیحات :
               </h1>
               <p className="product-info__infos__decsription-text">
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
@@ -156,10 +156,10 @@ function ProductInfo() {
                 </span>
               </h1>
               <div className="product-info__infos__colors-boxes">
-                <div className="product-info__infos__colors-box"></div>
-                <div className="product-info__infos__colors-box"></div>
-                <div className="product-info__infos__colors-box"></div>
-                <div className="product-info__infos__colors-box"></div>
+                <div className="product-info__infos__colors-box red-box"></div>
+                <div className="product-info__infos__colors-box gray-box"></div>
+                <div className="product-info__infos__colors-box black-box"></div>
+                <div className="product-info__infos__colors-box yellow-box"></div>
               </div>
             </div>
             {/* ! /////// */}
@@ -176,10 +176,10 @@ function ProductInfo() {
                 </span>
               </div>
               <div className="product-info__infos__size-boxes">
-                <div className="product-info__infos__size-box">10</div>
-                <div className="product-info__infos__size-box">10</div>
-                <div className="product-info__infos__size-box">10</div>
-                <div className="product-info__infos__size-box">10</div>
+                <div className="product-info__infos__size-box">20</div>
+                <div className="product-info__infos__size-box">30</div>
+                <div className="product-info__infos__size-box">44</div>
+                <div className="product-info__infos__size-box">48</div>
               </div>
             </div>
             {/* ! /////// */}
