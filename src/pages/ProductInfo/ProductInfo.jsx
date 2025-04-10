@@ -22,7 +22,7 @@ function ProductInfo() {
       <div className="container">
         <div className="product-info__wrapper">
           <div className="product-info__slider">
-            <Swiper 
+            <Swiper
               style={{
                 "--swiper-navigation-color": "#fff",
                 "--swiper-pagination-color": "#fff",
@@ -35,34 +35,34 @@ function ProductInfo() {
               className="productinfo-slider-main"
             >
               <SwiperSlide>
-                <img className="productinfo-slider__img" src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                <img
+                  className="productinfo-slider__img"
+                  src="../src/assets/Images/special-products/1.png"
+                />
               </SwiperSlide>
               <SwiperSlide>
-                <img className="productinfo-slider__img" src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                <img
+                  className="productinfo-slider__img"
+                  src="../src/assets/Images/special-products/2.png"
+                />
               </SwiperSlide>
               <SwiperSlide>
-                <img className="productinfo-slider__img" src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                <img
+                  className="productinfo-slider__img"
+                  src="../src/assets/Images/special-products/3.png"
+                />
               </SwiperSlide>
               <SwiperSlide>
-                <img className="productinfo-slider__img" src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                <img
+                  className="productinfo-slider__img"
+                  src="../src/assets/Images/special-products/4.png"
+                />
               </SwiperSlide>
               <SwiperSlide>
-                <img className="productinfo-slider__img" src="https://swiperjs.com/demos/images/nature-5.jpg" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img className="productinfo-slider__img" src="https://swiperjs.com/demos/images/nature-6.jpg" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                <img
+                  className="productinfo-slider__img"
+                  src="../src/assets/Images/special-products/5.png"
+                />
               </SwiperSlide>
             </Swiper>
             <Swiper
@@ -76,34 +76,34 @@ function ProductInfo() {
               className="productinfo-slider-gallery"
             >
               <SwiperSlide>
-                <img className="productinfo-slider-gallery-img" src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                <img
+                  className="productinfo-slider-gallery-img"
+                  src="../src/assets/Images/special-products/1.png"
+                />
               </SwiperSlide>
               <SwiperSlide>
-                <img className="productinfo-slider-gallery-img" src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                <img
+                  className="productinfo-slider-gallery-img"
+                  src="../src/assets/Images/special-products/2.png"
+                />
               </SwiperSlide>
               <SwiperSlide>
-                <img className="productinfo-slider-gallery-img" src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                <img
+                  className="productinfo-slider-gallery-img"
+                  src="../src/assets/Images/special-products/3.png"
+                />
               </SwiperSlide>
               <SwiperSlide>
-                <img className="productinfo-slider-gallery-img" src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                <img
+                  className="productinfo-slider-gallery-img"
+                  src="../src/assets/Images/special-products/4.png"
+                />
               </SwiperSlide>
               <SwiperSlide>
-                <img className="productinfo-slider-gallery-img" src="https://swiperjs.com/demos/images/nature-5.jpg" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img className="productinfo-slider-gallery-img" src="https://swiperjs.com/demos/images/nature-6.jpg" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img className="productinfo-slider-gallery-img" src="https://swiperjs.com/demos/images/nature-7.jpg" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img className="productinfo-slider-gallery-img" src="https://swiperjs.com/demos/images/nature-8.jpg" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img className="productinfo-slider-gallery-img" src="https://swiperjs.com/demos/images/nature-9.jpg" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img className="productinfo-slider-gallery-img" src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                <img
+                  className="productinfo-slider-gallery-img"
+                  src="../src/assets/Images/special-products/5.png"
+                />
               </SwiperSlide>
             </Swiper>
           </div>
