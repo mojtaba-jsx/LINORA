@@ -271,6 +271,18 @@ body {
   .selling-product-item {
     margin: 1rem auto;
   }
+  /* * ProductInfo Component */
+  .product-info__wrapper {
+    flex-direction: column;
+  }
+  .product-info__slider,
+  .product-info__infos {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .productinfo-slider-gallery {
+    height: 10rem;
+  }
 }
 @media screen and (max-width: 1200px) {
   /* * Features Component */
@@ -395,11 +407,11 @@ body {
     justify-content: center;
   }
   /* *Blog Info Page Comments */
-  .blog-post-info__comments__submit-input{
+  .blog-post-info__comments__submit-input {
     width: 80%;
     margin: 1rem auto;
   }
-  .blog-post-info__comments__box{
+  .blog-post-info__comments__box {
     width: 80%;
     margin: 1rem auto;
   }
@@ -532,6 +544,46 @@ body {
   .blog-post-info__title {
     font-size: 2.8rem;
   }
+  /* * Productinfo Component */
+  .product-info__infos-title {
+    text-align: center;
+  }
+  .product-info__infos__cart {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .product-info__infos__size-boxes,
+  .product-info__infos__colors-boxes {
+    flex-wrap: wrap;
+    row-gap: 1rem;
+  }
+  .product-info__slider {
+    width: 100%;
+  }
+  .product-info__infos__cart-add,
+  .product-info__infos__cart-checkout {
+    font-size: 14px;
+  }
+  .productinfo-slider__img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+  .productinfo-slider-gallery-img {
+    width: 5rem;
+    display: block;
+    margin: 0 auto;
+  }
+  .productinfo-slider-gallery {
+    width: 80%;
+  }
+  .product-info__infos-prices {
+    flex-direction: column-reverse;
+    row-gap: 1rem;
+  }
+  .product-info__infos-title {
+    font-size: 1.4rem;
+  }
 }
 @media screen and (max-width: 576px) {
   /* * Search Component */
@@ -648,8 +700,17 @@ body {
     font-size: 2rem;
   }
   /* * Blog Page Info */
-  .blog-post-info__title{
+  .blog-post-info__title {
     font-size: 2rem;
+  }
+  /* * ProductInfo Component */
+  .productinfo-slider-main {
+    width: auto;
+  }
+  .product-info__infos__cart-add,
+  .product-info__infos__cart-checkout {
+    font-size: 10px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 480px) {
