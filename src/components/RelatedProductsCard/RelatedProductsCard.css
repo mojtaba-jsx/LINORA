@@ -1,0 +1,84 @@
+.related-products-card {
+  width: 14rem;
+  height: auto;
+  margin-bottom: 4rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 1rem auto;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  position: relative;
+}
+
+.related-products-card__image {
+  width: 100%;
+}
+
+.related-products-card__title {
+  font-family: "parastoo-bold", Courier, monospace;
+  font-size: 22px;
+}
+
+.related-products-card__price {
+  font-size: 18px;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.related-products-card__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin-top: 0.5rem;
+}
+
+.related-products-card__info-sold {
+}
+
+.related-products-card__info-score {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-family: "parastoo-bold", Courier, monospace;
+}
+
+.related-products-card__info-score-icon {
+  color: var(--lightMustard);
+}
+
+.related-products-card__btn {
+  width: 100%;
+  /* margin-top: 1rem; */
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  background-color: var(--parisGreen);
+  font-family: "parastoo-bold", Courier, monospace;
+  color: var(--white);
+  position: absolute;
+  inset: 0;
+  top: 30rem;
+  overflow: hidden;
+  opacity: 0;
+  height: 100%;
+  cursor: pointer;
+  transition: all 120ms ease-in;
+  font-size: 2rem;
+  opacity: 0;
+  visibility: hidden;
+  color: var(--white);
+}
+.related-products-card__btn-icon {
+  font-size: 4rem;
+}
+
+.related-products-card:hover .related-products-card__btn {
+  opacity: 0.5;
+  visibility: visible;
+  transition: all 100ms ease-in;
+  top: 0;
+}
+

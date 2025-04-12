@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Basket from "../../components/Basket/Basket";
 import Search from "../../components/Search/Search";
+import RelatedProducts from '../../components/RelatedProducts/RelatedProducts'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 import "swiper/css";
@@ -195,6 +196,7 @@ function ProductInfo() {
             </div>
           </div>
         </div>
+        <RelatedProducts/>
       </div>
     </div>
   );

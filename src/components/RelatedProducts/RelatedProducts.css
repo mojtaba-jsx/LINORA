@@ -1,0 +1,11 @@
+.related-products{
+    margin-top: 2rem;
+}
+
+
+.related-products__title {
+  font-family: "parastoo-bold", Courier, monospace;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
