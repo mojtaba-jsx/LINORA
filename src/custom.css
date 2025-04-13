@@ -464,17 +464,17 @@ body {
   }
 
   /* * ProductReviews Component */
-  .product-reviews__wrapper{
+  .product-reviews__wrapper {
     flex-direction: column;
     row-gap: 2rem;
   }
-  .product-reviews__circle{
-    width: 100%;
+  .product-reviews__circle {
+    width: 20rem;
     justify-content: center;
-    
-   text-align: center;
+
+    text-align: center;
   }
-  .product-reviews__progressbars{
+  .product-reviews__progressbars {
     width: 100%;
   }
 }

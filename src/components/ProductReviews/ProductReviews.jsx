@@ -1,18 +1,31 @@
 import React from "react";
 import "./ProductReviews.css";
 import { FaStar } from "react-icons/fa";
+import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
 function ProductReviews() {
+  const value = 4.5;
+  const maxValue = 5;
   return (
     <div className="product-reviews">
-      <div class="container">
-        <h1 className="product-reviews__title">
-        بررسی محصول
-        </h1>
-        <div class="product-reviews__wrapper">
-          <div class="product-reviews__circle">
-            <span class="product-reviews__circle-shape">4.5</span>
-            <div class="product-reviews__stars">
-              <div class="product-reviews__stars-shapes">
+      <div className="container">
+        <h1 className="product-reviews__title">بررسی محصول</h1>
+        <div className="product-reviews__wrapper">
+          <div className="product-reviews__circle">
+            <CircularProgressbar
+              value={value}
+              maxValue={maxValue}
+              text={`${value}`}
+              strokeWidth={8}
+              styles={buildStyles({
+                pathColor: "#4cd07f",
+                trailColor: "#E0E6ED",
+                textColor: "#000",
+                textSize: "22px",
+              })}
+            />
+            <div className="product-reviews__stars">
+              <div className="product-reviews__stars-shapes">
                 <FaStar className="product-reviews__stars-shapes-star" />
                 <FaStar className="product-reviews__stars-shapes-star" />
                 <FaStar className="product-reviews__stars-shapes-star" />
@@ -23,8 +36,8 @@ function ProductReviews() {
             </div>
           </div>
 
-          <div class="product-reviews__progressbars">
-            <div class="product-reviews__progressbar">
+          <div className="product-reviews__progressbars">
+            <div className="product-reviews__progressbar">
               5.0
               <FaStar className="product-reviews__progressbar-star" />
               <progress
@@ -32,9 +45,9 @@ function ProductReviews() {
                 value={94}
                 max={100}
               ></progress>
-              5000
+              6000
             </div>
-            <div class="product-reviews__progressbar">
+            <div className="product-reviews__progressbar">
               4.0
               <FaStar className="product-reviews__progressbar-star" />
               <progress
@@ -42,9 +55,9 @@ function ProductReviews() {
                 value={80}
                 max={100}
               ></progress>
-              5000
+              4400
             </div>
-            <div class="product-reviews__progressbar">
+            <div className="product-reviews__progressbar">
               3.0
               <FaStar className="product-reviews__progressbar-star" />
               <progress
@@ -52,9 +65,9 @@ function ProductReviews() {
                 value={60}
                 max={100}
               ></progress>
-              5000
+              2500
             </div>
-            <div class="product-reviews__progressbar">
+            <div className="product-reviews__progressbar">
               2.0
               <FaStar className="product-reviews__progressbar-star" />
               <progress
@@ -62,9 +75,9 @@ function ProductReviews() {
                 value={40}
                 max={100}
               ></progress>
-              5000
+              800
             </div>
-            <div class="product-reviews__progressbar">
+            <div className="product-reviews__progressbar">
               1.0
               <FaStar className="product-reviews__progressbar-star" />
               <progress
@@ -72,7 +85,7 @@ function ProductReviews() {
                 value={20}
                 max={100}
               ></progress>
-              5000
+              2000
             </div>
           </div>
         </div>
