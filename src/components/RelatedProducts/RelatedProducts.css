@@ -1,7 +1,9 @@
-.related-products{
-    margin-top: 2rem;
+.related-products {
+  margin-top: 2rem;
+  border-bottom: 2px dotted var(--black);
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
-
 
 .related-products__title {
   font-family: "parastoo-bold", Courier, monospace;

@@ -462,6 +462,21 @@ body {
   .review-card {
     width: 18rem;
   }
+
+  /* * ProductReviews Component */
+  .product-reviews__wrapper{
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .product-reviews__circle{
+    width: 100%;
+    justify-content: center;
+    
+   text-align: center;
+  }
+  .product-reviews__progressbars{
+    width: 100%;
+  }
 }
 @media screen and (max-width: 768px) {
   /* * Fashion Component */
