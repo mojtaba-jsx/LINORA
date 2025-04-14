@@ -283,6 +283,18 @@ body {
   .productinfo-slider-gallery {
     height: 10rem;
   }
+  /* * ProductComment Component */
+  .product-comment__textarea,
+  .product-comment-list__item {
+    width: 80% !important;
+    margin: 0 auto;
+  }
+  .product-comment__btn{
+    margin: 1rem auto;
+  }
+  .product-comment__title{
+    margin-right: 1rem;
+  }
 }
 @media screen and (max-width: 1200px) {
   /* * Features Component */
