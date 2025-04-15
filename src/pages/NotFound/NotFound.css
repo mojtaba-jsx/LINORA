@@ -1,0 +1,47 @@
+.not-found__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.not-found__image {
+  width: 50%;
+}
+
+.not-found__title {
+  font-family: "parastoo-bold", Courier, monospace;
+  font-size: 2rem;
+}
+
+.not-found__text {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.not-found__btn {
+  padding: 1rem;
+  border: none;
+  outline: none;
+  background-color: var(--parisGreen);
+  color: var(--black);
+  border-radius: 0.5rem;
+  width: 10rem;
+  margin-top: 1rem;
+  font-family: "parastoo-bold", Courier, monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+  cursor: pointer;
+}
+.not-found__btn:hover .not-found__btn-icon {
+  transform: scale(1.2);
+}
+
+.not-found__btn-icon {
+  font-size: 22px;
+  transition: all 120ms ease-in;
+}
