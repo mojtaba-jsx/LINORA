@@ -1,25 +1,28 @@
 import React from "react";
 import "./CheckOut.css";
-import Navbar from '../../components/Navbar/Navbar'
-import Search from '../../components/Search/Search'
-import Basket from '../../components/Basket/Basket'
+import Navbar from "../../components/Navbar/Navbar";
+import Search from "../../components/Search/Search";
+import Basket from "../../components/Basket/Basket";
+import Footer from "../../components/Footer/Footer";
 function CheckOut() {
   return (
     <div className="checkout">
-        <Navbar/>
-        <Search/>
-        <Basket/>
-      <div className="checkout__header">
-        <div className="checkout__header-overlay"></div>
-        <img
-          src="../../src/assets/images/checkout/checkout.jpg"
-          alt=""
-          className="checkout__header-image"
-        />
-        <h1 className="checkout__header-title">تسویه حساب</h1>
-      </div>
+      <Navbar />
+      <Search />
+      <Basket />
+
       {/*  !///////////  */}
       <div className="container">
+        <div className="checkout__header">
+          <div className="checkout__header-overlay"></div>
+          <img
+            src="../../src/assets/images/checkout/checkout.jpg"
+            alt=""
+            className="checkout__header-image"
+          />
+          <h1 className="checkout__header-title">تسویه حساب</h1>
+        </div>
+        {/* ! ////////.//// */}
         <div className="checkout__wrapper">
           <div className="checkout-userinfo">
             <h2 className="checkout-userinfo__title">آدرس حمل و نقل</h2>
@@ -41,10 +44,9 @@ function CheckOut() {
               </label>
             </div>
             {/* ! ///////////// */}
-
             <div className="checkout-userinfo__row3">
               <label className="checkout-label">
-                تلفن / موبایل * *
+                تلفن / موبایل *
                 <input type="text" className="checkout-input" />
               </label>
               <label className="checkout-label">
@@ -73,6 +75,7 @@ function CheckOut() {
             {/* ! ///////////// */}
             <div className="checkout-userinfo__row6">
               <label className="checkout-label">
+                یادداشت های سفارش (اختیاری)
                 <textarea className="checkout-textarea"></textarea>
               </label>
             </div>
@@ -138,6 +141,7 @@ function CheckOut() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
