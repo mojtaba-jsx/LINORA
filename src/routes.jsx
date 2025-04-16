@@ -4,7 +4,7 @@ import ProductInfo from "./pages/ProductInfo/ProductInfo";
 import AboutUs from "./components/AboutUs/AboutUs";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Basket from "./components/Basket/Basket";
-import CheckOut from "./components/CheckOut/CheckOut";
+import CheckOut from "./pages/CheckOut/CheckOut";
 import NotFound from "./pages/NotFound/NotFound";
 import SignUp from "./pages/SignUp/SignUp";
 import Login from "./pages/Login/Login";
