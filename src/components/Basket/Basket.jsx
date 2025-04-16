@@ -21,7 +21,7 @@ function Basket() {
 
         <div className="basket__box">
           <img
-            src="./src/assets/images/basket/basket.png"
+            src="../../src/assets/images/basket/basket.png"
             alt=""
             className="basket__box-image"
           />

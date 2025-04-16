@@ -1,9 +1,16 @@
 import React from "react";
 import "./CheckOut.css";
+import Navbar from '../../components/Navbar/Navbar'
+import Search from '../../components/Search/Search'
+import Basket from '../../components/Basket/Basket'
 function CheckOut() {
   return (
     <div className="checkout">
+        <Navbar/>
+        <Search/>
+        <Basket/>
       <div className="checkout__header">
+        <div className="checkout__header-overlay"></div>
         <img
           src="../../src/assets/images/checkout/checkout.jpg"
           alt=""

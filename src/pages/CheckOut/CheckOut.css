@@ -1,0 +1,39 @@
+.checkout {
+  margin-bottom: 4rem;
+}
+
+
+
+
+.checkout__header {
+  position: relative;
+  width: 100%;
+  height: 300px; /* یا هر ارتفاعی که مدنظرت هست */
+  overflow: hidden;
+  margin-top: 2px;
+}
+
+.checkout__header-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.checkout__header-overlay {
+  position: absolute;
+  inset: 0; /* shorthand برای top: 0; left: 0; right: 0; bottom: 0 */
+  background-color: rgba(0, 0, 0, 0.4); /* یک پوشش مشکی نیمه شفاف */
+  z-index: 1;
+}
+
+.checkout__header-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2; /* بالاتر از overlay */
+  color: var(--white);
+  font-family: 'sogand', Courier, monospace;
+  font-size: 4rem;
+}
