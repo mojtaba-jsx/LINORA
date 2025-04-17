@@ -134,7 +134,7 @@ function CheckOut() {
                 <span>120000 تومان</span>
               </li>
               <li className="checkout-userbasket__item">
-                <span>جمع جز</span>
+                <span>جمع کل</span>
                 <span>200000 تومان</span>
               </li>
             </ul>

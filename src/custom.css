@@ -289,11 +289,20 @@ body {
     width: 80% !important;
     margin: 0 auto;
   }
-  .product-comment__btn{
+  .product-comment__btn {
     margin: 1rem auto;
   }
-  .product-comment__title{
+  .product-comment__title {
     margin-right: 1rem;
+  }
+  /* * Checkout Page */
+  .checkout__wrapper {
+    flex-direction: column-reverse;
+  }
+  .checkout-userinfo,
+  .checkout-userbasket {
+    width: 80%;
+    margin: 1rem auto;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -612,15 +621,26 @@ body {
     font-size: 1.4rem;
   }
   /* * NotFound Page */
-  .not-found__title{
+  .not-found__title {
     font-size: 1.4rem;
   }
-  .not-found__text{
+  .not-found__text {
     font-size: 1rem;
   }
-  .not-found__image{
+  .not-found__image {
     width: 100%;
   }
+  /* * Checkout Page */
+  .checkout-userinfo__row1,
+  .checkout-userinfo__row3,
+  .checkout-userinfo__row4 {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  .checkout__header-title{
+    font-size: 2.2rem;
+  }
+
 }
 @media screen and (max-width: 576px) {
   /* * Search Component */
