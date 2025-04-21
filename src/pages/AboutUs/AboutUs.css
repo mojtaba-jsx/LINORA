@@ -1,0 +1,43 @@
+.about-us__title {
+  font-size: 6rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-family: "sogand", Courier, monospace;
+}
+
+.about-us__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 2rem;
+  flex-direction: row-reverse;
+  margin-bottom: 4rem;
+}
+
+.about-us__info-text {
+  text-align: justify;
+  line-height: 2rem;
+  font-family: "parastoo-bold", Courier, monospace;
+}
+.about-us__info-text span {
+  font-size: 1.4rem;
+}
+
+.about-us__image {
+  width: 50rem;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.about-us__image-img {
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.about-us__info {
+  width: 50%;
+}

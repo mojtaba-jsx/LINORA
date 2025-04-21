@@ -25,8 +25,8 @@ function Footer() {
             <li className="footer__col1-item">
               <p className="footer__col1-text">
                 <span className="footer__col1-text-highlight">لینورا</span>{" "}
-                فروشگاهی تخصصی برای لباس‌های مردانه وزنه، جایی که کیفیت، استایل
-                و راحتی را در کنار هم تجربه می‌کنید
+                فروشگاهی تخصصی برای لباس‌های مردانه و زنانه ،  جایی که کیفیت، استایل
+                و راحتی را در کنار هم تجربه می کنید .
               </p>
             </li>
             <li className="footer__col1-item">
