@@ -2,7 +2,7 @@ import Home from "./pages/Home/Home";
 import UserAccount from "./components/UserAccount/UserAccount";
 import ProductInfo from "./pages/ProductInfo/ProductInfo";
 import AboutUs from "./pages/AboutUs/AboutUs";
-import ContactUs from "./components/ContactUs/ContactUs";
+import ContactUs from "./pages/ContactUs/ContactUs";
 import CheckOut from "./pages/CheckOut/CheckOut";
 import NotFound from "./pages/NotFound/NotFound";
 import SignUp from "./pages/SignUp/SignUp";

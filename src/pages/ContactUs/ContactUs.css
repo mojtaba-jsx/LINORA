@@ -1,0 +1,102 @@
+.contact-us__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4rem;
+  column-gap: 1rem;
+  padding: 1rem;
+}
+
+.contact-us__info {
+  width: 50%;
+  height: 20rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.contact-us__info-title {
+  font-size: 4rem;
+  font-family: "sogand", Courier, monospace;
+}
+
+.contact-us__info-subtitle {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+
+.contact-us__info-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-us__info-item {
+  display: flex;
+  column-gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.contact-us__info-item-icon {
+  font-size: 1.4rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.contact-form__row1,
+.contact-form__row2 {
+  display: flex;
+  align-items: center;
+  column-gap: 4rem;
+}
+
+.contact-form__label {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  font-family: "parastoo-bold", Courier, monospace;
+}
+
+.contact-form__row1-input {
+  width: 18rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  background-color: var(--whiteSmoke);
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  font-family: "parastoo", Courier, monospace;
+}
+
+.contact-form__row3-text {
+  height: 10rem;
+  border: none;
+  outline: none;
+  resize: none;
+  background-color: var(--whiteSmoke);
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  border-radius: 0.5rem;
+  font-family: "parastoo", Courier, monospace;
+  padding: 1rem;
+}
+
+.contact-form__btn {
+  width: 10rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  font-family: "parastoo-bold", Courier, monospace;
+  background-color: var(--parisGreen);
+  cursor: pointer;
+}
+
+.contact-form__img {
+  width: 20rem;
+}
